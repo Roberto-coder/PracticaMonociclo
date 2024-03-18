@@ -1,0 +1,14 @@
+|Fulladder
+a_i => axorb_w.IN0
+a_i => canda_w.IN0
+a_i => banda_w.IN0
+b_i => axorb_w.IN1
+b_i => candb_w.IN0
+b_i => banda_w.IN1
+c_i => canda_w.IN1
+c_i => candb_w.IN1
+c_i => s_o.IN1
+c_o <= c_o.DB_MAX_OUTPUT_PORT_TYPE
+s_o <= s_o.DB_MAX_OUTPUT_PORT_TYPE
+
+

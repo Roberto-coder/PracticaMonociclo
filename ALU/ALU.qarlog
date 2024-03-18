@@ -1,0 +1,21 @@
+Quartus Prime Archive log --	D:/6to/Arqui/Practicas/ALU/ALU.qarlog
+
+Archive:	D:/6to/Arqui/Practicas/ALU/ALU.qar
+Date:		Thu Mar 14 20:57:06 2024
+Quartus Prime		18.0.0 Build 614 04/24/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+D:/6to/Arqui/Practicas/ALU/ALU.qpf
+D:/6to/Arqui/Practicas/ALU/ALU.qsf
+D:/6to/Arqui/Practicas/ALU/ALU.v
+D:/6to/Arqui/Practicas/ALU/ALUNBits.v
+D:/6to/Arqui/Practicas/ALU/ALUNBits_FPGA.v
+D:/6to/Arqui/Practicas/ALU/Disp7segs.v
+D:/6to/Arqui/Practicas/ALU/Fulladder/Fulladder.v
+D:/6to/Arqui/Practicas/ALU/memoria_a.v
+D:/6to/Arqui/Practicas/ALU/memoria_b.v
+d:/quartus/quartus/bin64/assignment_defaults.qdf
+	======= Total: 10 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
