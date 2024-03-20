@@ -35,6 +35,7 @@ module ALUNBits #(
 	//Variable para bucle
 	genvar i;
 	generate
+	
 		for(i = 0; i < N; i = i + 1)
 			begin:alubucle
 			

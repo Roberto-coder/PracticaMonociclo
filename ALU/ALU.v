@@ -30,7 +30,8 @@
 	wire ab3_w; //Salida de la XOR
 	wire nob_w;//Salida de la NOT B
 	wire selb_w;//Salida de la Inversor B
-	wire salidasum_w;
+	wire salidasum_w;//Salida del sumador
+	wire salida_shift;//Salida shifter
 	
 	//AND GATE
 	assign ab1_w = a_i & selb_w;
@@ -57,10 +58,17 @@
 	
 	);
 	
+		//Instancia SLR
+	ShifLogicR slr(
+		.entrada	(1'b0),
+	   .a_i		(a_i),
+      .salida	(salida_shift)
+	
+	);
+	
 	
 	assign set_o=salidasum_w;
 	
-
 	
 	//SELECTOR 3 - 1 (3 entradas, 1 salida)
 	//assign resultado_o = (operacion_i) ? ab2_w : ab1_w;
@@ -73,7 +81,7 @@
 			4'b0011: resultado_o = less_i; //SLT	resultado_o = set_o/c_o;	
 			4'b0100: resultado_o = ab3_w; //XOR
 			4'b0101: resultado_o = 1'b0; //SLTU
-			4'b0111: resultado_o = 1'b0; //SLR
+			4'b0111: resultado_o = salida_shift; //SLR
 			4'b1000: resultado_o = 1'b0; //SLL
 			4'b1001: resultado_o = 1'b0; //SRA
 			default: resultado_o = 1'b0;

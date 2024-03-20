@@ -19,6 +19,8 @@ module ALUNBits_FPGA(
 	input c_i,
 	input invert_i,
 	input [2:0] operacion_i,
+	input	 [1:0] seloperacion_i,
+
 	output [6:0] disp0_o,
 	output [6:0] disp1_o,
 	output [6:0] disp2_o,
@@ -27,15 +29,16 @@ module ALUNBits_FPGA(
 	output [6:0] disp5_o,
 	output [6:0] disp6_o,
 	output [6:0] disp7_o,
-	output		 c_o,
-	input	 [1:0] seloperacion_i
+	
+	output		 c_o
+	
 );
 
 	//SECCIÓN DE DEFINICIÓN DE SEÑALES
-	wire	[31:0] opea_w;
-	wire	[31:0] opeb_w;
+	wire	[31:0] opea_w;//vector A
+	wire	[31:0] opeb_w;// vector B
 	reg 	[31:0] monitor_o;
-	wire 	[31:0] salida_o;
+	wire 	[31:0] salida_o;// resultado
 	
 	//Instancia de memorias
 	memoria_a mema(
@@ -63,6 +66,8 @@ module ALUNBits_FPGA(
 		.resultado_o	(salida_o),
 		.c_o				(c_o)
 	);
+	
+	
 	
 	//Displays de 7 segmentos
 	Disp7segs	Disp0(
