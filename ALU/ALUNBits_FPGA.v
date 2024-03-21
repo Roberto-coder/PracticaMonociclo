@@ -18,7 +18,7 @@ module ALUNBits_FPGA(
 	input [2:0] addrb_i,
 	input c_i,
 	input invert_i,
-	input [2:0] operacion_i,
+	input [3:0] operacion_i,
 	input	 [1:0] seloperacion_i,
 
 	output [6:0] disp0_o,
@@ -66,6 +66,36 @@ module ALUNBits_FPGA(
 		.resultado_o	(salida_o),
 		.c_o				(c_o)
 	);
+	
+	// Definir el código para SLR en operacion_i
+   localparam SLTU_OP = 4'b0101;	// SLTU
+	localparam SLR_OP =4'b0111;	//SLR
+	localparam SLL_OP =4'b1000;	/SLL
+	localparam SRA_OP =4'b1001;	//SRA
+	
+	
+	always @(*) 
+	 begin
+        case (operacion_i)
+            SLR_OP: 
+				begin
+                monitor_o = opea_w >> opeb_w;//SLR
+            end
+				SLL_OP: 
+				begin
+                monitor_o = opea_w << opeb_w;//SLR
+            end 
+				
+				SRA_OP: 
+				begin
+                monitor_o = $signed(opea_w) >>> opeb_w;//SLR
+            end
+				SLTU_OP: 
+				
+            
+            default: monitor_o = {N{1'b0}}; // Valor por defecto
+        endcase
+    end
 	
 	
 	

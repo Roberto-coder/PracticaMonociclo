@@ -18,7 +18,8 @@
 	input c_i,
 	input invert_i,
 	input less_i,
-	input [4:0] operacion_i,
+	input [4:0] operacion_i;
+	
 	output reg resultado_o,
 	output c_o,
 	output set_o
@@ -31,7 +32,6 @@
 	wire nob_w;//Salida de la NOT B
 	wire selb_w;//Salida de la Inversor B
 	wire salidasum_w;//Salida del sumador
-	wire salida_shift;//Salida shifter
 	
 	//AND GATE
 	assign ab1_w = a_i & selb_w;
@@ -58,13 +58,13 @@
 	
 	);
 	
-		//Instancia SLR
+		/*Instancia SLR
 	ShifLogicR slr(
-		.entrada	(1'b0),
+		.entrada	(valor_anterior),
 	   .a_i		(a_i),
       .salida	(salida_shift)
 	
-	);
+	);*/
 	
 	
 	assign set_o=salidasum_w;
@@ -79,12 +79,12 @@
 			4'b0001: resultado_o = ab2_w; //OR
 			4'b0010: resultado_o = salidasum_w; //Suma-Resta
 			4'b0011: resultado_o = less_i; //SLT	resultado_o = set_o/c_o;	
-			4'b0100: resultado_o = ab3_w; //XOR
-			4'b0101: resultado_o = 1'b0; //SLTU
-			4'b0111: resultado_o = salida_shift; //SLR
+			4'b0100: resultado_o = ab3_w;  //XOR
+			/*4'b0101: resultado_o = 1'b0;   //SLTU
+			4'b0111: resultado_o = 1'b0; //SLR
 			4'b1000: resultado_o = 1'b0; //SLL
-			4'b1001: resultado_o = 1'b0; //SRA
-			default: resultado_o = 1'b0;
+			4'b1001: resultado_o = 1'b0; //SRA*/
+			default: resultado_o = 1'b0; 
 		endcase
 
 	end

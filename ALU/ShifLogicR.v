@@ -29,3 +29,26 @@ always @(*)
 	end
 
 endmodule
+
+/*
+module ComprobarCarry(
+    input wire a_i,
+    input wire c_i,
+    output reg resultado_o,
+    output wire salida_o
+);
+
+// La salida salida_o simplemente pasa el valor de a_i
+assign salida_o = a_i;
+
+// La lógica para ajustar resultado_o basado en el estado de c_i
+always @(*) begin
+    if (c_i == 0) begin
+        resultado_o = 0; // Si c_i es 0, entonces resultado_o se pone a 0
+    end else begin
+        resultado_o = 1; // Si c_i es 1, entonces resultado_o se pone a 1
+    end
+end
+
+//endmodule
+*/
