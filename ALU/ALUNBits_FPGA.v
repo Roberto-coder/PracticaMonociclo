@@ -145,7 +145,7 @@ module ALUNBits_FPGA(
 				
 				SRA_OP: 
 				begin
-                monitor_o = $signed(opea_w) >>> opeb_w;//SLR
+                monitor_o = $signed(opea_w) >>> opeb_w;//SRA
             end
 				SLTU_OP: 
 					monitor_o = $unsigned(opea_w) < $unsigned(opeb_w);//SLTU
