@@ -18,7 +18,7 @@
 	input c_i,
 	input invert_i,
 	input less_i,
-	input [4:0] operacion_i;
+	input [3:0] operacion_i,
 	
 	output reg resultado_o,
 	output c_o,

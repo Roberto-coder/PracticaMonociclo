@@ -13,42 +13,24 @@
 	Descripcion:	SRL bit por bit
 */
 
-module passthrough(
-    input entrada, 	// Entrada de N bits
-	 input a_i;			// Bit N de A
-	 
-    output salida    // Salida del shift
+module shift_8bit
+(
+	input clk,
+	input [7:0] in,
+	output reg [7:0] out
 );
 
-
-always @(*) 
+	integer i;
+	reg [7:0] temp;
+	always@(posedge clk)
 	begin
-		salida = a_i; // Enviar el valor de a_i a la salida
-		a_i = entrada; // Asignar el valor de la entrada a a_i
-		 
+		temp[7:0] = in[7:0];
+		
+		for( i = 0; i < 7; i = i+1)
+		begin
+			out[i+1] <= temp[i];
+		end
+		out[0] <= temp[7];
 	end
 
 endmodule
-
-/*
-module ComprobarCarry(
-    input wire a_i,
-    input wire c_i,
-    output reg resultado_o,
-    output wire salida_o
-);
-
-// La salida salida_o simplemente pasa el valor de a_i
-assign salida_o = a_i;
-
-// La lógica para ajustar resultado_o basado en el estado de c_i
-always @(*) begin
-    if (c_i == 0) begin
-        resultado_o = 0; // Si c_i es 0, entonces resultado_o se pone a 0
-    end else begin
-        resultado_o = 1; // Si c_i es 1, entonces resultado_o se pone a 1
-    end
-end
-
-//endmodule
-*/

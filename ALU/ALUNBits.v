@@ -85,7 +85,7 @@ module ALUNBits #(
 					endcase
 				end
 		
-		}
+		
 	endgenerate
 	
 
