@@ -1,5 +1,9 @@
 Flow report for ALU
+<<<<<<< Updated upstream
 Thu Mar 21 01:34:14 2024
+=======
+Mon Mar 25 17:30:12 2024
+>>>>>>> Stashed changes
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -40,15 +44,24 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
+<<<<<<< Updated upstream
 ; Flow Status                        ; Successful - Thu Mar 21 01:34:14 2024       ;
+=======
+; Flow Status                        ; Successful - Mon Mar 25 17:30:12 2024       ;
+>>>>>>> Stashed changes
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; ALU                                         ;
 ; Top-level Entity Name              ; ALUNBits_FPGA                               ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
+<<<<<<< Updated upstream
 ; Total logic elements               ; 10                                          ;
 ;     Total combinational functions  ; 10                                          ;
+=======
+; Total logic elements               ; 5                                           ;
+;     Total combinational functions  ; 5                                           ;
+>>>>>>> Stashed changes
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 71                                          ;
@@ -64,7 +77,11 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
+<<<<<<< Updated upstream
 ; Start date & time ; 03/21/2024 01:33:58 ;
+=======
+; Start date & time ; 03/25/2024 17:30:00 ;
+>>>>>>> Stashed changes
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ALU                 ;
 +-------------------+---------------------+
@@ -75,7 +92,11 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+---------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name   ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+---------------+----------------+
+<<<<<<< Updated upstream
 ; COMPILER_SIGNATURE_ID               ; 251413963058193.171100643801560        ; --            ; --            ; --             ;
+=======
+; COMPILER_SIGNATURE_ID               ; 1098598588058.171140940011828          ; --            ; --            ; --             ;
+>>>>>>> Stashed changes
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --            ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --            ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --            ; eda_simulation ;
@@ -97,8 +118,13 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
+<<<<<<< Updated upstream
 ; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 4765 MB             ; 00:00:18                           ;
 ; Total                ; 00:00:12     ; --                      ; --                  ; 00:00:18                           ;
+=======
+; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 4780 MB             ; 00:00:11                           ;
+; Total                ; 00:00:12     ; --                      ; --                  ; 00:00:11                           ;
+>>>>>>> Stashed changes
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -107,7 +133,11 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
+<<<<<<< Updated upstream
 ; Analysis & Synthesis ; DESKTOP-NH3E078  ; Windows 10 ; 10.0       ; x86_64         ;
+=======
+; Analysis & Synthesis ; Rob              ; Windows 10 ; 10.0       ; x86_64         ;
+>>>>>>> Stashed changes
 +----------------------+------------------+------------+------------+----------------+
 
 

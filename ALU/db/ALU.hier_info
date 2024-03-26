@@ -218,7 +218,6 @@ addrb_i[0] => ~NO_FANOUT~
 addrb_i[1] => ~NO_FANOUT~
 addrb_i[2] => ~NO_FANOUT~
 invert_i => invert_i.IN32
-less_i => ~NO_FANOUT~
 operacion_i[0] => operacion_i[0].IN32
 operacion_i[1] => operacion_i[1].IN32
 operacion_i[2] => operacion_i[2].IN32
@@ -264,12 +263,24 @@ b_i => selb_w.DATAA
 b_i => selb_w.DATAB
 c_i => c_i.IN1
 invert_i => selb_w.OUTPUTSELECT
+<<<<<<< Updated upstream
 less_i => Mux0.IN11
 operacion_i[0] => Mux0.IN15
 operacion_i[1] => Mux0.IN14
 operacion_i[2] => Mux0.IN13
 operacion_i[3] => Mux0.IN12
 resultado_o <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+less_i => Mux0.IN2
+lessu_i => Mux0.IN3
+operacion_i[0] => Mux0.IN6
+operacion_i[0] => Mux1.IN10
+operacion_i[1] => Mux0.IN5
+operacion_i[1] => Mux1.IN9
+operacion_i[2] => Mux0.IN4
+operacion_i[2] => Mux1.IN8
+resultado_o <= resultado_o$latch.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> Stashed changes
 c_o <= Fulladder:falbit.c_o
 set_o <= Fulladder:falbit.s_o
 
@@ -294,12 +305,24 @@ b_i => selb_w.DATAA
 b_i => selb_w.DATAB
 c_i => c_i.IN1
 invert_i => selb_w.OUTPUTSELECT
+<<<<<<< Updated upstream
 less_i => Mux0.IN11
 operacion_i[0] => Mux0.IN15
 operacion_i[1] => Mux0.IN14
 operacion_i[2] => Mux0.IN13
 operacion_i[3] => Mux0.IN12
 resultado_o <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+less_i => Mux0.IN2
+lessu_i => Mux0.IN3
+operacion_i[0] => Mux0.IN6
+operacion_i[0] => Mux1.IN10
+operacion_i[1] => Mux0.IN5
+operacion_i[1] => Mux1.IN9
+operacion_i[2] => Mux0.IN4
+operacion_i[2] => Mux1.IN8
+resultado_o <= resultado_o$latch.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> Stashed changes
 c_o <= Fulladder:falbit.c_o
 set_o <= Fulladder:falbit.s_o
 
@@ -324,12 +347,24 @@ b_i => selb_w.DATAA
 b_i => selb_w.DATAB
 c_i => c_i.IN1
 invert_i => selb_w.OUTPUTSELECT
+<<<<<<< Updated upstream
 less_i => Mux0.IN11
 operacion_i[0] => Mux0.IN15
 operacion_i[1] => Mux0.IN14
 operacion_i[2] => Mux0.IN13
 operacion_i[3] => Mux0.IN12
 resultado_o <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+less_i => Mux0.IN2
+lessu_i => Mux0.IN3
+operacion_i[0] => Mux0.IN6
+operacion_i[0] => Mux1.IN10
+operacion_i[1] => Mux0.IN5
+operacion_i[1] => Mux1.IN9
+operacion_i[2] => Mux0.IN4
+operacion_i[2] => Mux1.IN8
+resultado_o <= resultado_o$latch.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> Stashed changes
 c_o <= Fulladder:falbit.c_o
 set_o <= Fulladder:falbit.s_o
 
@@ -354,12 +389,24 @@ b_i => selb_w.DATAA
 b_i => selb_w.DATAB
 c_i => c_i.IN1
 invert_i => selb_w.OUTPUTSELECT
+<<<<<<< Updated upstream
 less_i => Mux0.IN11
 operacion_i[0] => Mux0.IN15
 operacion_i[1] => Mux0.IN14
 operacion_i[2] => Mux0.IN13
 operacion_i[3] => Mux0.IN12
 resultado_o <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+less_i => Mux0.IN2
+lessu_i => Mux0.IN3
+operacion_i[0] => Mux0.IN6
+operacion_i[0] => Mux1.IN10
+operacion_i[1] => Mux0.IN5
+operacion_i[1] => Mux1.IN9
+operacion_i[2] => Mux0.IN4
+operacion_i[2] => Mux1.IN8
+resultado_o <= resultado_o$latch.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> Stashed changes
 c_o <= Fulladder:falbit.c_o
 set_o <= Fulladder:falbit.s_o
 
@@ -384,12 +431,24 @@ b_i => selb_w.DATAA
 b_i => selb_w.DATAB
 c_i => c_i.IN1
 invert_i => selb_w.OUTPUTSELECT
+<<<<<<< Updated upstream
 less_i => Mux0.IN11
 operacion_i[0] => Mux0.IN15
 operacion_i[1] => Mux0.IN14
 operacion_i[2] => Mux0.IN13
 operacion_i[3] => Mux0.IN12
 resultado_o <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+less_i => Mux0.IN2
+lessu_i => Mux0.IN3
+operacion_i[0] => Mux0.IN6
+operacion_i[0] => Mux1.IN10
+operacion_i[1] => Mux0.IN5
+operacion_i[1] => Mux1.IN9
+operacion_i[2] => Mux0.IN4
+operacion_i[2] => Mux1.IN8
+resultado_o <= resultado_o$latch.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> Stashed changes
 c_o <= Fulladder:falbit.c_o
 set_o <= Fulladder:falbit.s_o
 
@@ -414,12 +473,24 @@ b_i => selb_w.DATAA
 b_i => selb_w.DATAB
 c_i => c_i.IN1
 invert_i => selb_w.OUTPUTSELECT
+<<<<<<< Updated upstream
 less_i => Mux0.IN11
 operacion_i[0] => Mux0.IN15
 operacion_i[1] => Mux0.IN14
 operacion_i[2] => Mux0.IN13
 operacion_i[3] => Mux0.IN12
 resultado_o <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+less_i => Mux0.IN2
+lessu_i => Mux0.IN3
+operacion_i[0] => Mux0.IN6
+operacion_i[0] => Mux1.IN10
+operacion_i[1] => Mux0.IN5
+operacion_i[1] => Mux1.IN9
+operacion_i[2] => Mux0.IN4
+operacion_i[2] => Mux1.IN8
+resultado_o <= resultado_o$latch.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> Stashed changes
 c_o <= Fulladder:falbit.c_o
 set_o <= Fulladder:falbit.s_o
 
@@ -444,12 +515,24 @@ b_i => selb_w.DATAA
 b_i => selb_w.DATAB
 c_i => c_i.IN1
 invert_i => selb_w.OUTPUTSELECT
+<<<<<<< Updated upstream
 less_i => Mux0.IN11
 operacion_i[0] => Mux0.IN15
 operacion_i[1] => Mux0.IN14
 operacion_i[2] => Mux0.IN13
 operacion_i[3] => Mux0.IN12
 resultado_o <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+less_i => Mux0.IN2
+lessu_i => Mux0.IN3
+operacion_i[0] => Mux0.IN6
+operacion_i[0] => Mux1.IN10
+operacion_i[1] => Mux0.IN5
+operacion_i[1] => Mux1.IN9
+operacion_i[2] => Mux0.IN4
+operacion_i[2] => Mux1.IN8
+resultado_o <= resultado_o$latch.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> Stashed changes
 c_o <= Fulladder:falbit.c_o
 set_o <= Fulladder:falbit.s_o
 
@@ -474,12 +557,24 @@ b_i => selb_w.DATAA
 b_i => selb_w.DATAB
 c_i => c_i.IN1
 invert_i => selb_w.OUTPUTSELECT
+<<<<<<< Updated upstream
 less_i => Mux0.IN11
 operacion_i[0] => Mux0.IN15
 operacion_i[1] => Mux0.IN14
 operacion_i[2] => Mux0.IN13
 operacion_i[3] => Mux0.IN12
 resultado_o <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+less_i => Mux0.IN2
+lessu_i => Mux0.IN3
+operacion_i[0] => Mux0.IN6
+operacion_i[0] => Mux1.IN10
+operacion_i[1] => Mux0.IN5
+operacion_i[1] => Mux1.IN9
+operacion_i[2] => Mux0.IN4
+operacion_i[2] => Mux1.IN8
+resultado_o <= resultado_o$latch.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> Stashed changes
 c_o <= Fulladder:falbit.c_o
 set_o <= Fulladder:falbit.s_o
 
@@ -504,12 +599,24 @@ b_i => selb_w.DATAA
 b_i => selb_w.DATAB
 c_i => c_i.IN1
 invert_i => selb_w.OUTPUTSELECT
+<<<<<<< Updated upstream
 less_i => Mux0.IN11
 operacion_i[0] => Mux0.IN15
 operacion_i[1] => Mux0.IN14
 operacion_i[2] => Mux0.IN13
 operacion_i[3] => Mux0.IN12
 resultado_o <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+less_i => Mux0.IN2
+lessu_i => Mux0.IN3
+operacion_i[0] => Mux0.IN6
+operacion_i[0] => Mux1.IN10
+operacion_i[1] => Mux0.IN5
+operacion_i[1] => Mux1.IN9
+operacion_i[2] => Mux0.IN4
+operacion_i[2] => Mux1.IN8
+resultado_o <= resultado_o$latch.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> Stashed changes
 c_o <= Fulladder:falbit.c_o
 set_o <= Fulladder:falbit.s_o
 
@@ -534,12 +641,24 @@ b_i => selb_w.DATAA
 b_i => selb_w.DATAB
 c_i => c_i.IN1
 invert_i => selb_w.OUTPUTSELECT
+<<<<<<< Updated upstream
 less_i => Mux0.IN11
 operacion_i[0] => Mux0.IN15
 operacion_i[1] => Mux0.IN14
 operacion_i[2] => Mux0.IN13
 operacion_i[3] => Mux0.IN12
 resultado_o <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+less_i => Mux0.IN2
+lessu_i => Mux0.IN3
+operacion_i[0] => Mux0.IN6
+operacion_i[0] => Mux1.IN10
+operacion_i[1] => Mux0.IN5
+operacion_i[1] => Mux1.IN9
+operacion_i[2] => Mux0.IN4
+operacion_i[2] => Mux1.IN8
+resultado_o <= resultado_o$latch.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> Stashed changes
 c_o <= Fulladder:falbit.c_o
 set_o <= Fulladder:falbit.s_o
 
@@ -564,12 +683,24 @@ b_i => selb_w.DATAA
 b_i => selb_w.DATAB
 c_i => c_i.IN1
 invert_i => selb_w.OUTPUTSELECT
+<<<<<<< Updated upstream
 less_i => Mux0.IN11
 operacion_i[0] => Mux0.IN15
 operacion_i[1] => Mux0.IN14
 operacion_i[2] => Mux0.IN13
 operacion_i[3] => Mux0.IN12
 resultado_o <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+less_i => Mux0.IN2
+lessu_i => Mux0.IN3
+operacion_i[0] => Mux0.IN6
+operacion_i[0] => Mux1.IN10
+operacion_i[1] => Mux0.IN5
+operacion_i[1] => Mux1.IN9
+operacion_i[2] => Mux0.IN4
+operacion_i[2] => Mux1.IN8
+resultado_o <= resultado_o$latch.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> Stashed changes
 c_o <= Fulladder:falbit.c_o
 set_o <= Fulladder:falbit.s_o
 
@@ -594,12 +725,24 @@ b_i => selb_w.DATAA
 b_i => selb_w.DATAB
 c_i => c_i.IN1
 invert_i => selb_w.OUTPUTSELECT
+<<<<<<< Updated upstream
 less_i => Mux0.IN11
 operacion_i[0] => Mux0.IN15
 operacion_i[1] => Mux0.IN14
 operacion_i[2] => Mux0.IN13
 operacion_i[3] => Mux0.IN12
 resultado_o <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+less_i => Mux0.IN2
+lessu_i => Mux0.IN3
+operacion_i[0] => Mux0.IN6
+operacion_i[0] => Mux1.IN10
+operacion_i[1] => Mux0.IN5
+operacion_i[1] => Mux1.IN9
+operacion_i[2] => Mux0.IN4
+operacion_i[2] => Mux1.IN8
+resultado_o <= resultado_o$latch.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> Stashed changes
 c_o <= Fulladder:falbit.c_o
 set_o <= Fulladder:falbit.s_o
 
@@ -624,12 +767,24 @@ b_i => selb_w.DATAA
 b_i => selb_w.DATAB
 c_i => c_i.IN1
 invert_i => selb_w.OUTPUTSELECT
+<<<<<<< Updated upstream
 less_i => Mux0.IN11
 operacion_i[0] => Mux0.IN15
 operacion_i[1] => Mux0.IN14
 operacion_i[2] => Mux0.IN13
 operacion_i[3] => Mux0.IN12
 resultado_o <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+less_i => Mux0.IN2
+lessu_i => Mux0.IN3
+operacion_i[0] => Mux0.IN6
+operacion_i[0] => Mux1.IN10
+operacion_i[1] => Mux0.IN5
+operacion_i[1] => Mux1.IN9
+operacion_i[2] => Mux0.IN4
+operacion_i[2] => Mux1.IN8
+resultado_o <= resultado_o$latch.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> Stashed changes
 c_o <= Fulladder:falbit.c_o
 set_o <= Fulladder:falbit.s_o
 
@@ -654,12 +809,24 @@ b_i => selb_w.DATAA
 b_i => selb_w.DATAB
 c_i => c_i.IN1
 invert_i => selb_w.OUTPUTSELECT
+<<<<<<< Updated upstream
 less_i => Mux0.IN11
 operacion_i[0] => Mux0.IN15
 operacion_i[1] => Mux0.IN14
 operacion_i[2] => Mux0.IN13
 operacion_i[3] => Mux0.IN12
 resultado_o <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+less_i => Mux0.IN2
+lessu_i => Mux0.IN3
+operacion_i[0] => Mux0.IN6
+operacion_i[0] => Mux1.IN10
+operacion_i[1] => Mux0.IN5
+operacion_i[1] => Mux1.IN9
+operacion_i[2] => Mux0.IN4
+operacion_i[2] => Mux1.IN8
+resultado_o <= resultado_o$latch.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> Stashed changes
 c_o <= Fulladder:falbit.c_o
 set_o <= Fulladder:falbit.s_o
 
@@ -684,12 +851,24 @@ b_i => selb_w.DATAA
 b_i => selb_w.DATAB
 c_i => c_i.IN1
 invert_i => selb_w.OUTPUTSELECT
+<<<<<<< Updated upstream
 less_i => Mux0.IN11
 operacion_i[0] => Mux0.IN15
 operacion_i[1] => Mux0.IN14
 operacion_i[2] => Mux0.IN13
 operacion_i[3] => Mux0.IN12
 resultado_o <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+less_i => Mux0.IN2
+lessu_i => Mux0.IN3
+operacion_i[0] => Mux0.IN6
+operacion_i[0] => Mux1.IN10
+operacion_i[1] => Mux0.IN5
+operacion_i[1] => Mux1.IN9
+operacion_i[2] => Mux0.IN4
+operacion_i[2] => Mux1.IN8
+resultado_o <= resultado_o$latch.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> Stashed changes
 c_o <= Fulladder:falbit.c_o
 set_o <= Fulladder:falbit.s_o
 
@@ -714,12 +893,24 @@ b_i => selb_w.DATAA
 b_i => selb_w.DATAB
 c_i => c_i.IN1
 invert_i => selb_w.OUTPUTSELECT
+<<<<<<< Updated upstream
 less_i => Mux0.IN11
 operacion_i[0] => Mux0.IN15
 operacion_i[1] => Mux0.IN14
 operacion_i[2] => Mux0.IN13
 operacion_i[3] => Mux0.IN12
 resultado_o <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+less_i => Mux0.IN2
+lessu_i => Mux0.IN3
+operacion_i[0] => Mux0.IN6
+operacion_i[0] => Mux1.IN10
+operacion_i[1] => Mux0.IN5
+operacion_i[1] => Mux1.IN9
+operacion_i[2] => Mux0.IN4
+operacion_i[2] => Mux1.IN8
+resultado_o <= resultado_o$latch.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> Stashed changes
 c_o <= Fulladder:falbit.c_o
 set_o <= Fulladder:falbit.s_o
 
@@ -744,12 +935,24 @@ b_i => selb_w.DATAA
 b_i => selb_w.DATAB
 c_i => c_i.IN1
 invert_i => selb_w.OUTPUTSELECT
+<<<<<<< Updated upstream
 less_i => Mux0.IN11
 operacion_i[0] => Mux0.IN15
 operacion_i[1] => Mux0.IN14
 operacion_i[2] => Mux0.IN13
 operacion_i[3] => Mux0.IN12
 resultado_o <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+less_i => Mux0.IN2
+lessu_i => Mux0.IN3
+operacion_i[0] => Mux0.IN6
+operacion_i[0] => Mux1.IN10
+operacion_i[1] => Mux0.IN5
+operacion_i[1] => Mux1.IN9
+operacion_i[2] => Mux0.IN4
+operacion_i[2] => Mux1.IN8
+resultado_o <= resultado_o$latch.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> Stashed changes
 c_o <= Fulladder:falbit.c_o
 set_o <= Fulladder:falbit.s_o
 
@@ -774,12 +977,24 @@ b_i => selb_w.DATAA
 b_i => selb_w.DATAB
 c_i => c_i.IN1
 invert_i => selb_w.OUTPUTSELECT
+<<<<<<< Updated upstream
 less_i => Mux0.IN11
 operacion_i[0] => Mux0.IN15
 operacion_i[1] => Mux0.IN14
 operacion_i[2] => Mux0.IN13
 operacion_i[3] => Mux0.IN12
 resultado_o <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+less_i => Mux0.IN2
+lessu_i => Mux0.IN3
+operacion_i[0] => Mux0.IN6
+operacion_i[0] => Mux1.IN10
+operacion_i[1] => Mux0.IN5
+operacion_i[1] => Mux1.IN9
+operacion_i[2] => Mux0.IN4
+operacion_i[2] => Mux1.IN8
+resultado_o <= resultado_o$latch.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> Stashed changes
 c_o <= Fulladder:falbit.c_o
 set_o <= Fulladder:falbit.s_o
 
@@ -804,12 +1019,24 @@ b_i => selb_w.DATAA
 b_i => selb_w.DATAB
 c_i => c_i.IN1
 invert_i => selb_w.OUTPUTSELECT
+<<<<<<< Updated upstream
 less_i => Mux0.IN11
 operacion_i[0] => Mux0.IN15
 operacion_i[1] => Mux0.IN14
 operacion_i[2] => Mux0.IN13
 operacion_i[3] => Mux0.IN12
 resultado_o <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+less_i => Mux0.IN2
+lessu_i => Mux0.IN3
+operacion_i[0] => Mux0.IN6
+operacion_i[0] => Mux1.IN10
+operacion_i[1] => Mux0.IN5
+operacion_i[1] => Mux1.IN9
+operacion_i[2] => Mux0.IN4
+operacion_i[2] => Mux1.IN8
+resultado_o <= resultado_o$latch.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> Stashed changes
 c_o <= Fulladder:falbit.c_o
 set_o <= Fulladder:falbit.s_o
 
@@ -834,12 +1061,24 @@ b_i => selb_w.DATAA
 b_i => selb_w.DATAB
 c_i => c_i.IN1
 invert_i => selb_w.OUTPUTSELECT
+<<<<<<< Updated upstream
 less_i => Mux0.IN11
 operacion_i[0] => Mux0.IN15
 operacion_i[1] => Mux0.IN14
 operacion_i[2] => Mux0.IN13
 operacion_i[3] => Mux0.IN12
 resultado_o <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+less_i => Mux0.IN2
+lessu_i => Mux0.IN3
+operacion_i[0] => Mux0.IN6
+operacion_i[0] => Mux1.IN10
+operacion_i[1] => Mux0.IN5
+operacion_i[1] => Mux1.IN9
+operacion_i[2] => Mux0.IN4
+operacion_i[2] => Mux1.IN8
+resultado_o <= resultado_o$latch.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> Stashed changes
 c_o <= Fulladder:falbit.c_o
 set_o <= Fulladder:falbit.s_o
 
@@ -864,12 +1103,24 @@ b_i => selb_w.DATAA
 b_i => selb_w.DATAB
 c_i => c_i.IN1
 invert_i => selb_w.OUTPUTSELECT
+<<<<<<< Updated upstream
 less_i => Mux0.IN11
 operacion_i[0] => Mux0.IN15
 operacion_i[1] => Mux0.IN14
 operacion_i[2] => Mux0.IN13
 operacion_i[3] => Mux0.IN12
 resultado_o <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+less_i => Mux0.IN2
+lessu_i => Mux0.IN3
+operacion_i[0] => Mux0.IN6
+operacion_i[0] => Mux1.IN10
+operacion_i[1] => Mux0.IN5
+operacion_i[1] => Mux1.IN9
+operacion_i[2] => Mux0.IN4
+operacion_i[2] => Mux1.IN8
+resultado_o <= resultado_o$latch.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> Stashed changes
 c_o <= Fulladder:falbit.c_o
 set_o <= Fulladder:falbit.s_o
 
@@ -894,12 +1145,24 @@ b_i => selb_w.DATAA
 b_i => selb_w.DATAB
 c_i => c_i.IN1
 invert_i => selb_w.OUTPUTSELECT
+<<<<<<< Updated upstream
 less_i => Mux0.IN11
 operacion_i[0] => Mux0.IN15
 operacion_i[1] => Mux0.IN14
 operacion_i[2] => Mux0.IN13
 operacion_i[3] => Mux0.IN12
 resultado_o <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+less_i => Mux0.IN2
+lessu_i => Mux0.IN3
+operacion_i[0] => Mux0.IN6
+operacion_i[0] => Mux1.IN10
+operacion_i[1] => Mux0.IN5
+operacion_i[1] => Mux1.IN9
+operacion_i[2] => Mux0.IN4
+operacion_i[2] => Mux1.IN8
+resultado_o <= resultado_o$latch.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> Stashed changes
 c_o <= Fulladder:falbit.c_o
 set_o <= Fulladder:falbit.s_o
 
@@ -924,12 +1187,24 @@ b_i => selb_w.DATAA
 b_i => selb_w.DATAB
 c_i => c_i.IN1
 invert_i => selb_w.OUTPUTSELECT
+<<<<<<< Updated upstream
 less_i => Mux0.IN11
 operacion_i[0] => Mux0.IN15
 operacion_i[1] => Mux0.IN14
 operacion_i[2] => Mux0.IN13
 operacion_i[3] => Mux0.IN12
 resultado_o <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+less_i => Mux0.IN2
+lessu_i => Mux0.IN3
+operacion_i[0] => Mux0.IN6
+operacion_i[0] => Mux1.IN10
+operacion_i[1] => Mux0.IN5
+operacion_i[1] => Mux1.IN9
+operacion_i[2] => Mux0.IN4
+operacion_i[2] => Mux1.IN8
+resultado_o <= resultado_o$latch.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> Stashed changes
 c_o <= Fulladder:falbit.c_o
 set_o <= Fulladder:falbit.s_o
 
@@ -954,12 +1229,24 @@ b_i => selb_w.DATAA
 b_i => selb_w.DATAB
 c_i => c_i.IN1
 invert_i => selb_w.OUTPUTSELECT
+<<<<<<< Updated upstream
 less_i => Mux0.IN11
 operacion_i[0] => Mux0.IN15
 operacion_i[1] => Mux0.IN14
 operacion_i[2] => Mux0.IN13
 operacion_i[3] => Mux0.IN12
 resultado_o <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+less_i => Mux0.IN2
+lessu_i => Mux0.IN3
+operacion_i[0] => Mux0.IN6
+operacion_i[0] => Mux1.IN10
+operacion_i[1] => Mux0.IN5
+operacion_i[1] => Mux1.IN9
+operacion_i[2] => Mux0.IN4
+operacion_i[2] => Mux1.IN8
+resultado_o <= resultado_o$latch.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> Stashed changes
 c_o <= Fulladder:falbit.c_o
 set_o <= Fulladder:falbit.s_o
 
@@ -984,12 +1271,24 @@ b_i => selb_w.DATAA
 b_i => selb_w.DATAB
 c_i => c_i.IN1
 invert_i => selb_w.OUTPUTSELECT
+<<<<<<< Updated upstream
 less_i => Mux0.IN11
 operacion_i[0] => Mux0.IN15
 operacion_i[1] => Mux0.IN14
 operacion_i[2] => Mux0.IN13
 operacion_i[3] => Mux0.IN12
 resultado_o <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+less_i => Mux0.IN2
+lessu_i => Mux0.IN3
+operacion_i[0] => Mux0.IN6
+operacion_i[0] => Mux1.IN10
+operacion_i[1] => Mux0.IN5
+operacion_i[1] => Mux1.IN9
+operacion_i[2] => Mux0.IN4
+operacion_i[2] => Mux1.IN8
+resultado_o <= resultado_o$latch.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> Stashed changes
 c_o <= Fulladder:falbit.c_o
 set_o <= Fulladder:falbit.s_o
 
@@ -1014,12 +1313,24 @@ b_i => selb_w.DATAA
 b_i => selb_w.DATAB
 c_i => c_i.IN1
 invert_i => selb_w.OUTPUTSELECT
+<<<<<<< Updated upstream
 less_i => Mux0.IN11
 operacion_i[0] => Mux0.IN15
 operacion_i[1] => Mux0.IN14
 operacion_i[2] => Mux0.IN13
 operacion_i[3] => Mux0.IN12
 resultado_o <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+less_i => Mux0.IN2
+lessu_i => Mux0.IN3
+operacion_i[0] => Mux0.IN6
+operacion_i[0] => Mux1.IN10
+operacion_i[1] => Mux0.IN5
+operacion_i[1] => Mux1.IN9
+operacion_i[2] => Mux0.IN4
+operacion_i[2] => Mux1.IN8
+resultado_o <= resultado_o$latch.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> Stashed changes
 c_o <= Fulladder:falbit.c_o
 set_o <= Fulladder:falbit.s_o
 
@@ -1044,12 +1355,24 @@ b_i => selb_w.DATAA
 b_i => selb_w.DATAB
 c_i => c_i.IN1
 invert_i => selb_w.OUTPUTSELECT
+<<<<<<< Updated upstream
 less_i => Mux0.IN11
 operacion_i[0] => Mux0.IN15
 operacion_i[1] => Mux0.IN14
 operacion_i[2] => Mux0.IN13
 operacion_i[3] => Mux0.IN12
 resultado_o <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+less_i => Mux0.IN2
+lessu_i => Mux0.IN3
+operacion_i[0] => Mux0.IN6
+operacion_i[0] => Mux1.IN10
+operacion_i[1] => Mux0.IN5
+operacion_i[1] => Mux1.IN9
+operacion_i[2] => Mux0.IN4
+operacion_i[2] => Mux1.IN8
+resultado_o <= resultado_o$latch.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> Stashed changes
 c_o <= Fulladder:falbit.c_o
 set_o <= Fulladder:falbit.s_o
 
@@ -1074,12 +1397,24 @@ b_i => selb_w.DATAA
 b_i => selb_w.DATAB
 c_i => c_i.IN1
 invert_i => selb_w.OUTPUTSELECT
+<<<<<<< Updated upstream
 less_i => Mux0.IN11
 operacion_i[0] => Mux0.IN15
 operacion_i[1] => Mux0.IN14
 operacion_i[2] => Mux0.IN13
 operacion_i[3] => Mux0.IN12
 resultado_o <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+less_i => Mux0.IN2
+lessu_i => Mux0.IN3
+operacion_i[0] => Mux0.IN6
+operacion_i[0] => Mux1.IN10
+operacion_i[1] => Mux0.IN5
+operacion_i[1] => Mux1.IN9
+operacion_i[2] => Mux0.IN4
+operacion_i[2] => Mux1.IN8
+resultado_o <= resultado_o$latch.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> Stashed changes
 c_o <= Fulladder:falbit.c_o
 set_o <= Fulladder:falbit.s_o
 
@@ -1104,12 +1439,24 @@ b_i => selb_w.DATAA
 b_i => selb_w.DATAB
 c_i => c_i.IN1
 invert_i => selb_w.OUTPUTSELECT
+<<<<<<< Updated upstream
 less_i => Mux0.IN11
 operacion_i[0] => Mux0.IN15
 operacion_i[1] => Mux0.IN14
 operacion_i[2] => Mux0.IN13
 operacion_i[3] => Mux0.IN12
 resultado_o <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+less_i => Mux0.IN2
+lessu_i => Mux0.IN3
+operacion_i[0] => Mux0.IN6
+operacion_i[0] => Mux1.IN10
+operacion_i[1] => Mux0.IN5
+operacion_i[1] => Mux1.IN9
+operacion_i[2] => Mux0.IN4
+operacion_i[2] => Mux1.IN8
+resultado_o <= resultado_o$latch.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> Stashed changes
 c_o <= Fulladder:falbit.c_o
 set_o <= Fulladder:falbit.s_o
 
@@ -1134,12 +1481,24 @@ b_i => selb_w.DATAA
 b_i => selb_w.DATAB
 c_i => c_i.IN1
 invert_i => selb_w.OUTPUTSELECT
+<<<<<<< Updated upstream
 less_i => Mux0.IN11
 operacion_i[0] => Mux0.IN15
 operacion_i[1] => Mux0.IN14
 operacion_i[2] => Mux0.IN13
 operacion_i[3] => Mux0.IN12
 resultado_o <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+less_i => Mux0.IN2
+lessu_i => Mux0.IN3
+operacion_i[0] => Mux0.IN6
+operacion_i[0] => Mux1.IN10
+operacion_i[1] => Mux0.IN5
+operacion_i[1] => Mux1.IN9
+operacion_i[2] => Mux0.IN4
+operacion_i[2] => Mux1.IN8
+resultado_o <= resultado_o$latch.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> Stashed changes
 c_o <= Fulladder:falbit.c_o
 set_o <= Fulladder:falbit.s_o
 
@@ -1164,12 +1523,24 @@ b_i => selb_w.DATAA
 b_i => selb_w.DATAB
 c_i => c_i.IN1
 invert_i => selb_w.OUTPUTSELECT
+<<<<<<< Updated upstream
 less_i => Mux0.IN11
 operacion_i[0] => Mux0.IN15
 operacion_i[1] => Mux0.IN14
 operacion_i[2] => Mux0.IN13
 operacion_i[3] => Mux0.IN12
 resultado_o <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+less_i => Mux0.IN2
+lessu_i => Mux0.IN3
+operacion_i[0] => Mux0.IN6
+operacion_i[0] => Mux1.IN10
+operacion_i[1] => Mux0.IN5
+operacion_i[1] => Mux1.IN9
+operacion_i[2] => Mux0.IN4
+operacion_i[2] => Mux1.IN8
+resultado_o <= resultado_o$latch.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> Stashed changes
 c_o <= Fulladder:falbit.c_o
 set_o <= Fulladder:falbit.s_o
 
@@ -1194,12 +1565,24 @@ b_i => selb_w.DATAA
 b_i => selb_w.DATAB
 c_i => c_i.IN1
 invert_i => selb_w.OUTPUTSELECT
+<<<<<<< Updated upstream
 less_i => Mux0.IN11
 operacion_i[0] => Mux0.IN15
 operacion_i[1] => Mux0.IN14
 operacion_i[2] => Mux0.IN13
 operacion_i[3] => Mux0.IN12
 resultado_o <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+less_i => Mux0.IN2
+lessu_i => Mux0.IN3
+operacion_i[0] => Mux0.IN6
+operacion_i[0] => Mux1.IN10
+operacion_i[1] => Mux0.IN5
+operacion_i[1] => Mux1.IN9
+operacion_i[2] => Mux0.IN4
+operacion_i[2] => Mux1.IN8
+resultado_o <= resultado_o$latch.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> Stashed changes
 c_o <= Fulladder:falbit.c_o
 set_o <= Fulladder:falbit.s_o
 

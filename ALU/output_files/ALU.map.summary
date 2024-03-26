@@ -1,10 +1,19 @@
+<<<<<<< Updated upstream
 Analysis & Synthesis Status : Successful - Thu Mar 21 01:34:14 2024
+=======
+Analysis & Synthesis Status : Successful - Mon Mar 25 17:30:12 2024
+>>>>>>> Stashed changes
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : ALU
 Top-level Entity Name : ALUNBits_FPGA
 Family : Cyclone IV E
+<<<<<<< Updated upstream
 Total logic elements : 10
     Total combinational functions : 10
+=======
+Total logic elements : 5
+    Total combinational functions : 5
+>>>>>>> Stashed changes
     Dedicated logic registers : 0
 Total registers : 0
 Total pins : 71

@@ -4,19 +4,14 @@
 			"name" : "Top",
 			"pins" : [
 				{
+<<<<<<< Updated upstream
 					"name" : "disp0_o[0]",
 					"strict" : false
 				},
 				{
+=======
+>>>>>>> Stashed changes
 					"name" : "disp0_o[2]",
-					"strict" : false
-				},
-				{
-					"name" : "disp0_o[3]",
-					"strict" : false
-				},
-				{
-					"name" : "disp0_o[4]",
 					"strict" : false
 				},
 				{
@@ -104,10 +99,37 @@
 					"strict" : false
 				},
 				{
+<<<<<<< Updated upstream
 					"name" : "operacion_i[1]",
 					"strict" : false
 				},
 				{
+=======
+					"name" : "addra_i[0]",
+					"strict" : false
+				},
+				{
+					"name" : "addra_i[1]",
+					"strict" : false
+				},
+				{
+					"name" : "addra_i[2]",
+					"strict" : false
+				},
+				{
+					"name" : "operacion_i[0]",
+					"strict" : false
+				},
+				{
+					"name" : "operacion_i[1]",
+					"strict" : false
+				},
+				{
+					"name" : "operacion_i[2]",
+					"strict" : false
+				},
+				{
+>>>>>>> Stashed changes
 					"name" : "operacion_i[3]",
 					"strict" : false
 				},
@@ -120,6 +142,7 @@
 					"strict" : false
 				},
 				{
+<<<<<<< Updated upstream
 					"name" : "operacion_i[0]",
 					"strict" : false
 				},
@@ -137,6 +160,17 @@
 				},
 				{
 					"name" : "addra_i[2]",
+=======
+					"name" : "addrb_i[0]",
+					"strict" : false
+				},
+				{
+					"name" : "c_i",
+					"strict" : false
+				},
+				{
+					"name" : "invert_i",
+>>>>>>> Stashed changes
 					"strict" : false
 				},
 				{
