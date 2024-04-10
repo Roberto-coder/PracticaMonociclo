@@ -1,9 +1,5 @@
 Analysis & Synthesis report for ALU
-<<<<<<< Updated upstream
 Thu Mar 21 01:34:14 2024
-=======
-Mon Mar 25 17:30:12 2024
->>>>>>> Stashed changes
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -55,10 +51,7 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
  43. Post-Synthesis Netlist Statistics for Top Partition
  44. Elapsed Time Per Partition
  45. Analysis & Synthesis Messages
-<<<<<<< Updated upstream
  46. Analysis & Synthesis Suppressed Messages
-=======
->>>>>>> Stashed changes
 
 
 
@@ -84,22 +77,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-<<<<<<< Updated upstream
 ; Analysis & Synthesis Status        ; Successful - Thu Mar 21 01:34:14 2024       ;
-=======
-; Analysis & Synthesis Status        ; Successful - Mon Mar 25 17:30:12 2024       ;
->>>>>>> Stashed changes
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; ALU                                         ;
 ; Top-level Entity Name              ; ALUNBits_FPGA                               ;
 ; Family                             ; Cyclone IV E                                ;
-<<<<<<< Updated upstream
 ; Total logic elements               ; 10                                          ;
 ;     Total combinational functions  ; 10                                          ;
-=======
-; Total logic elements               ; 5                                           ;
-;     Total combinational functions  ; 5                                           ;
->>>>>>> Stashed changes
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 71                                          ;
@@ -201,13 +185,8 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-<<<<<<< Updated upstream
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 6           ;
-=======
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 8           ;
->>>>>>> Stashed changes
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -217,7 +196,6 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-<<<<<<< Updated upstream
 +-----------------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Source Files Read                                                                                            ;
 +----------------------------------+-----------------+------------------------+-------------------------------------------+---------+
@@ -231,21 +209,6 @@ refer to the applicable agreement for further details.
 ; memoria_b.v                      ; yes             ; User Verilog HDL File  ; D:/Arquitectura/ALU/memoria_b.v           ;         ;
 ; memoria_a.v                      ; yes             ; User Verilog HDL File  ; D:/Arquitectura/ALU/memoria_a.v           ;         ;
 +----------------------------------+-----------------+------------------------+-------------------------------------------+---------+
-=======
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                  ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                    ; Library ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------+---------+
-; Fulladder/Fulladder.v            ; yes             ; User Verilog HDL File  ; D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/Fulladder/Fulladder.v ;         ;
-; ALU.v                            ; yes             ; User Verilog HDL File  ; D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALU.v                 ;         ;
-; ALUNBits.v                       ; yes             ; User Verilog HDL File  ; D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits.v            ;         ;
-; Disp7segs.v                      ; yes             ; User Verilog HDL File  ; D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/Disp7segs.v           ;         ;
-; ALUNBits_FPGA.v                  ; yes             ; User Verilog HDL File  ; D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v       ;         ;
-; memoria_b.v                      ; yes             ; User Verilog HDL File  ; D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/memoria_b.v           ;         ;
-; memoria_a.v                      ; yes             ; User Verilog HDL File  ; D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/memoria_a.v           ;         ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------+---------+
->>>>>>> Stashed changes
 
 
 +------------------------------------------------------+
@@ -253,7 +216,6 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+--------+
 ; Resource                                    ; Usage  ;
 +---------------------------------------------+--------+
-<<<<<<< Updated upstream
 ; Estimated Total logic elements              ; 10     ;
 ;                                             ;        ;
 ; Total combinational functions               ; 10     ;
@@ -264,18 +226,6 @@ refer to the applicable agreement for further details.
 ;                                             ;        ;
 ; Logic elements by mode                      ;        ;
 ;     -- normal mode                          ; 10     ;
-=======
-; Estimated Total logic elements              ; 5      ;
-;                                             ;        ;
-; Total combinational functions               ; 5      ;
-; Logic element usage by number of LUT inputs ;        ;
-;     -- 4 input functions                    ; 4      ;
-;     -- 3 input functions                    ; 1      ;
-;     -- <=2 input functions                  ; 0      ;
-;                                             ;        ;
-; Logic elements by mode                      ;        ;
-;     -- normal mode                          ; 5      ;
->>>>>>> Stashed changes
 ;     -- arithmetic mode                      ; 0      ;
 ;                                             ;        ;
 ; Total registers                             ; 0      ;
@@ -287,15 +237,9 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0      ;
 ;                                             ;        ;
 ; Maximum fan-out node                        ; Mux5~3 ;
-<<<<<<< Updated upstream
 ; Maximum fan-out                             ; 22     ;
 ; Total fan-out                               ; 128    ;
 ; Average fan-out                             ; 0.84   ;
-=======
-; Maximum fan-out                             ; 21     ;
-; Total fan-out                               ; 112    ;
-; Average fan-out                             ; 0.76   ;
->>>>>>> Stashed changes
 +---------------------------------------------+--------+
 
 
@@ -304,18 +248,11 @@ refer to the applicable agreement for further details.
 +----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------+---------------+--------------+
 ; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                              ; Entity Name   ; Library Name ;
 +----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------+---------------+--------------+
-<<<<<<< Updated upstream
 ; |ALUNBits_FPGA                         ; 10 (4)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 71   ; 0            ; |ALUNBits_FPGA                                                                   ; ALUNBits_FPGA ; work         ;
 ;    |ALUNBits:ALUNBits|                 ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUNBits_FPGA|ALUNBits:ALUNBits                                                 ; ALUNBits      ; work         ;
 ;       |ALUbitN:alubucle[31].ALUBitN_1| ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUNBits_FPGA|ALUNBits:ALUNBits|ALUbitN:alubucle[31].ALUBitN_1                  ; ALUbitN       ; work         ;
 ;          |Fulladder:falbit|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUNBits_FPGA|ALUNBits:ALUNBits|ALUbitN:alubucle[31].ALUBitN_1|Fulladder:falbit ; Fulladder     ; work         ;
 ;    |Disp7segs:Disp0|                   ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUNBits_FPGA|Disp7segs:Disp0                                                   ; Disp7segs     ; work         ;
-=======
-; |ALUNBits_FPGA                         ; 5 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 71   ; 0            ; |ALUNBits_FPGA                                                                   ; ALUNBits_FPGA ; work         ;
-;    |ALUNBits:ALUNBits|                 ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUNBits_FPGA|ALUNBits:ALUNBits                                                 ; ALUNBits      ; work         ;
-;       |ALUbitN:alubucle[31].ALUBitN_1| ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUNBits_FPGA|ALUNBits:ALUNBits|ALUbitN:alubucle[31].ALUBitN_1                  ; ALUbitN       ; work         ;
-;          |Fulladder:falbit|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUNBits_FPGA|ALUNBits:ALUNBits|ALUbitN:alubucle[31].ALUBitN_1|Fulladder:falbit ; Fulladder     ; work         ;
->>>>>>> Stashed changes
 ;    |memoria_a:mema|                    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUNBits_FPGA|memoria_a:mema                                                    ; memoria_a     ; work         ;
 +----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------+---------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -348,342 +285,311 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[31].ALUBitN_1" ;
-+---------+-------+----------+-------------------------------------------------+
-; Port    ; Type  ; Severity ; Details                                         ;
-+---------+-------+----------+-------------------------------------------------+
-; less_i  ; Input ; Info     ; Stuck at GND                                    ;
-; lessu_i ; Input ; Info     ; Stuck at GND                                    ;
-+---------+-------+----------+-------------------------------------------------+
++--------+-------+----------+--------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                          ;
++--------+-------+----------+--------------------------------------------------+
+; less_i ; Input ; Info     ; Stuck at GND                                     ;
++--------+-------+----------+--------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[30].ALUBitX"                                                             ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                  ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; less_i  ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; lessu_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; set_o   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[30].ALUBitX"                                                            ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                  ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; less_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; set_o  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[29].ALUBitX"                                                             ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                  ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; less_i  ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; lessu_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; set_o   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[29].ALUBitX"                                                            ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                  ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; less_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; set_o  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[28].ALUBitX"                                                             ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                  ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; less_i  ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; lessu_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; set_o   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[28].ALUBitX"                                                            ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                  ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; less_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; set_o  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[27].ALUBitX"                                                             ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                  ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; less_i  ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; lessu_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; set_o   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[27].ALUBitX"                                                            ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                  ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; less_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; set_o  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[26].ALUBitX"                                                             ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                  ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; less_i  ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; lessu_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; set_o   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[26].ALUBitX"                                                            ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                  ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; less_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; set_o  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[25].ALUBitX"                                                             ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                  ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; less_i  ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; lessu_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; set_o   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[25].ALUBitX"                                                            ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                  ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; less_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; set_o  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[24].ALUBitX"                                                             ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                  ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; less_i  ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; lessu_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; set_o   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[24].ALUBitX"                                                            ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                  ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; less_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; set_o  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[23].ALUBitX"                                                             ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                  ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; less_i  ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; lessu_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; set_o   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[23].ALUBitX"                                                            ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                  ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; less_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; set_o  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[22].ALUBitX"                                                             ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                  ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; less_i  ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; lessu_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; set_o   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[22].ALUBitX"                                                            ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                  ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; less_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; set_o  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[21].ALUBitX"                                                             ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                  ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; less_i  ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; lessu_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; set_o   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[21].ALUBitX"                                                            ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                  ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; less_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; set_o  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[20].ALUBitX"                                                             ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                  ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; less_i  ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; lessu_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; set_o   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[20].ALUBitX"                                                            ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                  ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; less_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; set_o  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[19].ALUBitX"                                                             ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                  ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; less_i  ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; lessu_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; set_o   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[19].ALUBitX"                                                            ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                  ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; less_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; set_o  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[18].ALUBitX"                                                             ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                  ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; less_i  ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; lessu_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; set_o   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[18].ALUBitX"                                                            ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                  ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; less_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; set_o  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[17].ALUBitX"                                                             ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                  ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; less_i  ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; lessu_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; set_o   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[17].ALUBitX"                                                            ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                  ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; less_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; set_o  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[16].ALUBitX"                                                             ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                  ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; less_i  ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; lessu_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; set_o   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[16].ALUBitX"                                                            ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                  ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; less_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; set_o  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[15].ALUBitX"                                                             ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                  ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; less_i  ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; lessu_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; set_o   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[15].ALUBitX"                                                            ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                  ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; less_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; set_o  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[14].ALUBitX"                                                             ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                  ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; less_i  ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; lessu_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; set_o   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[14].ALUBitX"                                                            ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                  ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; less_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; set_o  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[13].ALUBitX"                                                             ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                  ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; less_i  ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; lessu_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; set_o   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[13].ALUBitX"                                                            ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                  ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; less_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; set_o  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[12].ALUBitX"                                                             ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                  ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; less_i  ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; lessu_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; set_o   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[12].ALUBitX"                                                            ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                  ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; less_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; set_o  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[11].ALUBitX"                                                             ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                  ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; less_i  ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; lessu_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; set_o   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[11].ALUBitX"                                                            ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                  ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; less_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; set_o  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[10].ALUBitX"                                                             ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                  ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; less_i  ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; lessu_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; set_o   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[10].ALUBitX"                                                            ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                  ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; less_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; set_o  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[9].ALUBitX"                                                              ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                  ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; less_i  ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; lessu_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; set_o   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[9].ALUBitX"                                                             ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                  ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; less_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; set_o  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[8].ALUBitX"                                                              ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                  ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; less_i  ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; lessu_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; set_o   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[8].ALUBitX"                                                             ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                  ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; less_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; set_o  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[7].ALUBitX"                                                              ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                  ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; less_i  ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; lessu_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; set_o   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[7].ALUBitX"                                                             ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                  ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; less_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; set_o  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[6].ALUBitX"                                                              ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                  ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; less_i  ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; lessu_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; set_o   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[6].ALUBitX"                                                             ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                  ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; less_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; set_o  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[5].ALUBitX"                                                              ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                  ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; less_i  ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; lessu_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; set_o   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[5].ALUBitX"                                                             ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                  ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; less_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; set_o  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[4].ALUBitX"                                                              ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                  ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; less_i  ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; lessu_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; set_o   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[4].ALUBitX"                                                             ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                  ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; less_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; set_o  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[3].ALUBitX"                                                              ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                  ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; less_i  ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; lessu_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; set_o   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[3].ALUBitX"                                                             ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                  ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; less_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; set_o  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[2].ALUBitX"                                                              ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                  ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; less_i  ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; lessu_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; set_o   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[2].ALUBitX"                                                             ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                  ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; less_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; set_o  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[1].ALUBitX"                                                              ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                  ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; less_i  ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; lessu_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; set_o   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALUNBits:ALUNBits|ALUbitN:alubucle[1].ALUBitX"                                                             ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                  ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; less_i ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; set_o  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------+
@@ -695,7 +601,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-<<<<<<< Updated upstream
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "ALUNBits:ALUNBits"                                                                                                                                  ;
 +-------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
@@ -705,16 +610,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; addrb_i     ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
 ; less_i      ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
 +-------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-=======
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALUNBits:ALUNBits"                                                                                                                                                                      ;
-+-------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port        ; Type   ; Severity ; Details                                                                                                                                                                          ;
-+-------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; operacion_i ; Input  ; Warning  ; Input port expression (4 bits) is wider than the input port (3 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; resultado_o ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                              ;
-+-------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
->>>>>>> Stashed changes
 
 
 +-----------------------------------------------------+
@@ -723,7 +618,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 71                          ;
-<<<<<<< Updated upstream
 ; cycloneiii_lcell_comb ; 15                          ;
 ;     normal            ; 15                          ;
 ;         0 data inputs ; 2                           ;
@@ -734,17 +628,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;                       ;                             ;
 ; Max LUT depth         ; 4.00                        ;
 ; Average LUT depth     ; 3.11                        ;
-=======
-; cycloneiii_lcell_comb ; 8                           ;
-;     normal            ; 8                           ;
-;         0 data inputs ; 2                           ;
-;         1 data inputs ; 1                           ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 4                           ;
-;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 2.30                        ;
->>>>>>> Stashed changes
 +-----------------------+-----------------------------+
 
 
@@ -753,11 +636,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-<<<<<<< Updated upstream
 ; Top            ; 00:00:01     ;
-=======
-; Top            ; 00:00:00     ;
->>>>>>> Stashed changes
 +----------------+--------------+
 
 
@@ -767,29 +646,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-<<<<<<< Updated upstream
     Info: Processing started: Thu Mar 21 01:33:58 2024
-=======
-    Info: Processing started: Mon Mar 25 17:30:00 2024
->>>>>>> Stashed changes
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file fulladder/fulladder.v
-    Info (12023): Found entity 1: Fulladder File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/Fulladder/Fulladder.v Line: 1
+    Info (12023): Found entity 1: Fulladder File: D:/Arquitectura/ALU/Fulladder/Fulladder.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
-    Info (12023): Found entity 1: ALUbitN File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALU.v Line: 15
+    Info (12023): Found entity 1: ALUbitN File: D:/Arquitectura/ALU/ALU.v Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file alunbits.v
-    Info (12023): Found entity 1: ALUNBits File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits.v Line: 15
+    Info (12023): Found entity 1: ALUNBits File: D:/Arquitectura/ALU/ALUNBits.v Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file disp7segs.v
-    Info (12023): Found entity 1: Disp7segs File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/Disp7segs.v Line: 15
+    Info (12023): Found entity 1: Disp7segs File: D:/Arquitectura/ALU/Disp7segs.v Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file alunbits_fpga.v
-    Info (12023): Found entity 1: ALUNBits_FPGA File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 16
+    Info (12023): Found entity 1: ALUNBits_FPGA File: D:/Arquitectura/ALU/ALUNBits_FPGA.v Line: 16
 Warning (12019): Can't analyze file -- file memoria.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file memoria_b.v
-    Info (12023): Found entity 1: memoria_b File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/memoria_b.v Line: 15
+    Info (12023): Found entity 1: memoria_b File: D:/Arquitectura/ALU/memoria_b.v Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file memoria_a.v
-<<<<<<< Updated upstream
     Info (12023): Found entity 1: memoria_a File: D:/Arquitectura/ALU/memoria_a.v Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file shiflogicr.v
     Info (12023): Found entity 1: shift_8bit File: D:/Arquitectura/ALU/ShifLogicR.v Line: 16
@@ -867,81 +741,5 @@ Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 47 warnings
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
 The suppressed messages can be found in D:/Arquitectura/ALU/output_files/ALU.map.smsg.
-=======
-    Info (12023): Found entity 1: memoria_a File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/memoria_a.v Line: 15
-Info (12127): Elaborating entity "ALUNBits_FPGA" for the top level hierarchy
-Info (12128): Elaborating entity "memoria_a" for hierarchy "memoria_a:mema" File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 47
-Warning (10030): Net "memory.data_a" at memoria_a.v(21) has no driver or initial value, using a default initial value '0' File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/memoria_a.v Line: 21
-Warning (10030): Net "memory.waddr_a" at memoria_a.v(21) has no driver or initial value, using a default initial value '0' File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/memoria_a.v Line: 21
-Warning (10030): Net "memory.we_a" at memoria_a.v(21) has no driver or initial value, using a default initial value '0' File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/memoria_a.v Line: 21
-Info (12128): Elaborating entity "memoria_b" for hierarchy "memoria_b:memb" File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 52
-Warning (10030): Net "memory.data_a" at memoria_b.v(21) has no driver or initial value, using a default initial value '0' File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/memoria_b.v Line: 21
-Warning (10030): Net "memory.waddr_a" at memoria_b.v(21) has no driver or initial value, using a default initial value '0' File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/memoria_b.v Line: 21
-Warning (10030): Net "memory.we_a" at memoria_b.v(21) has no driver or initial value, using a default initial value '0' File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/memoria_b.v Line: 21
-Info (12128): Elaborating entity "ALUNBits" for hierarchy "ALUNBits:ALUNBits" File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 68
-Info (12128): Elaborating entity "ALUbitN" for hierarchy "ALUNBits:ALUNBits|ALUbitN:alubucle[0].ALU1Bit" File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits.v Line: 53
-Warning (10270): Verilog HDL Case Statement warning at ALU.v(65): incomplete case statement has no default case item File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALU.v Line: 65
-Warning (10240): Verilog HDL Always Construct warning at ALU.v(65): inferring latch(es) for variable "resultado_o", which holds its previous value in one or more paths through the always construct File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALU.v Line: 65
-Info (10041): Inferred latch for "resultado_o" at ALU.v(65) File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALU.v Line: 65
-Info (12128): Elaborating entity "Fulladder" for hierarchy "ALUNBits:ALUNBits|ALUbitN:alubucle[0].ALU1Bit|Fulladder:falbit" File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALU.v Line: 57
-Info (12128): Elaborating entity "Disp7segs" for hierarchy "Disp7segs:Disp0" File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 83
-Info (276014): Found 2 instances of uninferred RAM logic
-    Info (276004): RAM logic "memoria_a:mema|memory" is uninferred due to inappropriate RAM size File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/memoria_a.v Line: 21
-    Info (276004): RAM logic "memoria_b:memb|memory" is uninferred due to inappropriate RAM size File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/memoria_b.v Line: 21
-Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/db/ALU.ram0_memoria_a_e2bb3591.hdl.mif" contains "don't care" values -- overwriting them with 0s
-Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/db/ALU.ram0_memoria_b_e2bb3592.hdl.mif" contains "don't care" values -- overwriting them with 0s
-Warning (12241): 32 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "disp0_o[0]" is stuck at GND File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 24
-    Warning (13410): Pin "disp0_o[1]" is stuck at GND File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 24
-    Warning (13410): Pin "disp0_o[3]" is stuck at GND File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 24
-    Warning (13410): Pin "disp0_o[4]" is stuck at GND File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 24
-    Warning (13410): Pin "disp1_o[0]" is stuck at GND File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 25
-    Warning (13410): Pin "disp1_o[1]" is stuck at GND File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 25
-    Warning (13410): Pin "disp1_o[2]" is stuck at GND File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 25
-    Warning (13410): Pin "disp1_o[5]" is stuck at GND File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 25
-    Warning (13410): Pin "disp2_o[0]" is stuck at GND File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 26
-    Warning (13410): Pin "disp2_o[1]" is stuck at GND File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 26
-    Warning (13410): Pin "disp2_o[2]" is stuck at GND File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 26
-    Warning (13410): Pin "disp2_o[5]" is stuck at GND File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 26
-    Warning (13410): Pin "disp3_o[0]" is stuck at GND File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 27
-    Warning (13410): Pin "disp3_o[2]" is stuck at GND File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 27
-    Warning (13410): Pin "disp3_o[3]" is stuck at GND File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 27
-    Warning (13410): Pin "disp3_o[4]" is stuck at GND File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 27
-    Warning (13410): Pin "disp3_o[5]" is stuck at GND File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 27
-    Warning (13410): Pin "disp4_o[0]" is stuck at GND File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 28
-    Warning (13410): Pin "disp4_o[4]" is stuck at GND File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 28
-    Warning (13410): Pin "disp4_o[5]" is stuck at GND File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 28
-    Warning (13410): Pin "disp5_o[0]" is stuck at GND File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 29
-    Warning (13410): Pin "disp5_o[1]" is stuck at GND File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 29
-    Warning (13410): Pin "disp5_o[2]" is stuck at GND File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 29
-    Warning (13410): Pin "disp5_o[3]" is stuck at GND File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 29
-    Warning (13410): Pin "disp5_o[4]" is stuck at GND File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 29
-    Warning (13410): Pin "disp5_o[5]" is stuck at GND File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 29
-    Warning (13410): Pin "disp5_o[6]" is stuck at VCC File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 29
-    Warning (13410): Pin "disp6_o[0]" is stuck at GND File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 30
-    Warning (13410): Pin "disp6_o[2]" is stuck at GND File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 30
-    Warning (13410): Pin "disp6_o[3]" is stuck at GND File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 30
-    Warning (13410): Pin "disp6_o[5]" is stuck at GND File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 30
-    Warning (13410): Pin "disp7_o[0]" is stuck at GND File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 31
-    Warning (13410): Pin "disp7_o[1]" is stuck at GND File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 31
-    Warning (13410): Pin "disp7_o[2]" is stuck at GND File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 31
-    Warning (13410): Pin "disp7_o[3]" is stuck at GND File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 31
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "seloperacion_i[0]" File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 22
-    Warning (15610): No output dependent on input pin "seloperacion_i[1]" File: D:/6to/Arqui/Practicas/ALUvr/ALU-32vR/ALU/ALUNBits_FPGA.v Line: 22
-Info (21057): Implemented 76 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 14 input pins
-    Info (21059): Implemented 57 output pins
-    Info (21061): Implemented 5 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 52 warnings
-    Info: Peak virtual memory: 4780 megabytes
-    Info: Processing ended: Mon Mar 25 17:30:12 2024
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:11
->>>>>>> Stashed changes
 
 

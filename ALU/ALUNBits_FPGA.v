@@ -68,7 +68,7 @@ module ALUNBits_FPGA(
 	);
 	
 	// Definir el código para SLR en operacion_i
-   //localparam SLTU_OP = 4'b0101;	// SLTU
+   localparam SLTU_OP = 4'b0101;	// SLTU
 	localparam SLR_OP =4'b0111;	//SLR
 	localparam SLL_OP =4'b1000;	//SLL
 	localparam SRA_OP =4'b1001;	//SRA
@@ -140,24 +140,15 @@ module ALUNBits_FPGA(
             end
 				SLL_OP: 
 				begin
-<<<<<<< Updated upstream
                 monitor_o = opea_w << opeb_w;//SLR
-=======
-                monitor_o = opea_w << opeb_w;//SLL
->>>>>>> Stashed changes
             end 
 				
 				SRA_OP: 
 				begin
                 monitor_o = $signed(opea_w) >>> opeb_w;//SRA
             end
-<<<<<<< Updated upstream
 				SLTU_OP: 
 					monitor_o = $unsigned(opea_w) < $unsigned(opeb_w);//SLTU
-=======
-				/*SLTU_OP: 
-					monitor_o = $unsigned(opea_w) < $unsigned(opeb_w);//SLTU*/
->>>>>>> Stashed changes
             
             default: monitor_o = {32'b0}; // Valor por defecto
         endcase
