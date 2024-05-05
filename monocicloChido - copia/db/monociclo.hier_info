@@ -1,0 +1,243 @@
+|monociclo
+clk_i => clk_i.IN1
+rst_ni => rst_ni.IN1
+disp0[0] << Disp7segs:disp_0.monitor_o
+disp0[1] << Disp7segs:disp_0.monitor_o
+disp0[2] << Disp7segs:disp_0.monitor_o
+disp0[3] << Disp7segs:disp_0.monitor_o
+disp0[4] << Disp7segs:disp_0.monitor_o
+disp0[5] << Disp7segs:disp_0.monitor_o
+disp0[6] << Disp7segs:disp_0.monitor_o
+disp1[0] << Disp7segs:disp_1.monitor_o
+disp1[1] << Disp7segs:disp_1.monitor_o
+disp1[2] << Disp7segs:disp_1.monitor_o
+disp1[3] << Disp7segs:disp_1.monitor_o
+disp1[4] << Disp7segs:disp_1.monitor_o
+disp1[5] << Disp7segs:disp_1.monitor_o
+disp1[6] << Disp7segs:disp_1.monitor_o
+disp2[0] << Disp7segs:disp_2.monitor_o
+disp2[1] << Disp7segs:disp_2.monitor_o
+disp2[2] << Disp7segs:disp_2.monitor_o
+disp2[3] << Disp7segs:disp_2.monitor_o
+disp2[4] << Disp7segs:disp_2.monitor_o
+disp2[5] << Disp7segs:disp_2.monitor_o
+disp2[6] << Disp7segs:disp_2.monitor_o
+disp3[0] << Disp7segs:disp_3.monitor_o
+disp3[1] << Disp7segs:disp_3.monitor_o
+disp3[2] << Disp7segs:disp_3.monitor_o
+disp3[3] << Disp7segs:disp_3.monitor_o
+disp3[4] << Disp7segs:disp_3.monitor_o
+disp3[5] << Disp7segs:disp_3.monitor_o
+disp3[6] << Disp7segs:disp_3.monitor_o
+disp4[0] << Disp7segs:disp_4.monitor_o
+disp4[1] << Disp7segs:disp_4.monitor_o
+disp4[2] << Disp7segs:disp_4.monitor_o
+disp4[3] << Disp7segs:disp_4.monitor_o
+disp4[4] << Disp7segs:disp_4.monitor_o
+disp4[5] << Disp7segs:disp_4.monitor_o
+disp4[6] << Disp7segs:disp_4.monitor_o
+disp5[0] << Disp7segs:disp_5.monitor_o
+disp5[1] << Disp7segs:disp_5.monitor_o
+disp5[2] << Disp7segs:disp_5.monitor_o
+disp5[3] << Disp7segs:disp_5.monitor_o
+disp5[4] << Disp7segs:disp_5.monitor_o
+disp5[5] << Disp7segs:disp_5.monitor_o
+disp5[6] << Disp7segs:disp_5.monitor_o
+disp6[0] << Disp7segs:disp_6.monitor_o
+disp6[1] << Disp7segs:disp_6.monitor_o
+disp6[2] << Disp7segs:disp_6.monitor_o
+disp6[3] << Disp7segs:disp_6.monitor_o
+disp6[4] << Disp7segs:disp_6.monitor_o
+disp6[5] << Disp7segs:disp_6.monitor_o
+disp6[6] << Disp7segs:disp_6.monitor_o
+disp7[0] << Disp7segs:disp_7.monitor_o
+disp7[1] << Disp7segs:disp_7.monitor_o
+disp7[2] << Disp7segs:disp_7.monitor_o
+disp7[3] << Disp7segs:disp_7.monitor_o
+disp7[4] << Disp7segs:disp_7.monitor_o
+disp7[5] << Disp7segs:disp_7.monitor_o
+disp7[6] << Disp7segs:disp_7.monitor_o
+
+
+|monociclo|divfreq:DivFreq
+clk_i => cuenta[0].CLK
+clk_i => cuenta[1].CLK
+clk_i => cuenta[2].CLK
+clk_i => cuenta[3].CLK
+clk_i => cuenta[4].CLK
+clk_i => cuenta[5].CLK
+clk_i => cuenta[6].CLK
+clk_i => cuenta[7].CLK
+clk_i => cuenta[8].CLK
+clk_i => cuenta[9].CLK
+clk_i => cuenta[10].CLK
+clk_i => cuenta[11].CLK
+clk_i => cuenta[12].CLK
+clk_i => cuenta[13].CLK
+clk_i => cuenta[14].CLK
+clk_i => cuenta[15].CLK
+clk_i => cuenta[16].CLK
+clk_i => cuenta[17].CLK
+clk_i => cuenta[18].CLK
+clk_i => cuenta[19].CLK
+clk_i => cuenta[20].CLK
+clk_i => cuenta[21].CLK
+clk_i => cuenta[22].CLK
+clk_i => cuenta[23].CLK
+clk_i => cuenta[24].CLK
+clk_i => cuenta[25].CLK
+clk_i => cuenta[26].CLK
+clk_i => cuenta[27].CLK
+clk_i => cuenta[28].CLK
+clk_i => cuenta[29].CLK
+clk_i => cuenta[30].CLK
+clk_i => cuenta[31].CLK
+clk_i => clk_o~reg0.CLK
+rst_ni => cuenta[0].ACLR
+rst_ni => cuenta[1].ACLR
+rst_ni => cuenta[2].ACLR
+rst_ni => cuenta[3].ACLR
+rst_ni => cuenta[4].ACLR
+rst_ni => cuenta[5].ACLR
+rst_ni => cuenta[6].ACLR
+rst_ni => cuenta[7].ACLR
+rst_ni => cuenta[8].ACLR
+rst_ni => cuenta[9].ACLR
+rst_ni => cuenta[10].ACLR
+rst_ni => cuenta[11].ACLR
+rst_ni => cuenta[12].ACLR
+rst_ni => cuenta[13].ACLR
+rst_ni => cuenta[14].ACLR
+rst_ni => cuenta[15].ACLR
+rst_ni => cuenta[16].ACLR
+rst_ni => cuenta[17].ACLR
+rst_ni => cuenta[18].ACLR
+rst_ni => cuenta[19].ACLR
+rst_ni => cuenta[20].ACLR
+rst_ni => cuenta[21].ACLR
+rst_ni => cuenta[22].ACLR
+rst_ni => cuenta[23].ACLR
+rst_ni => cuenta[24].ACLR
+rst_ni => cuenta[25].ACLR
+rst_ni => cuenta[26].ACLR
+rst_ni => cuenta[27].ACLR
+rst_ni => cuenta[28].ACLR
+rst_ni => cuenta[29].ACLR
+rst_ni => cuenta[30].ACLR
+rst_ni => cuenta[31].ACLR
+rst_ni => clk_o~reg0.PRESET
+clk_o <= clk_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|monociclo|Disp7segs:disp_0
+entrada_i[0] => Decoder0.IN3
+entrada_i[1] => Decoder0.IN2
+entrada_i[2] => Decoder0.IN1
+entrada_i[3] => Decoder0.IN0
+monitor_o[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|monociclo|Disp7segs:disp_1
+entrada_i[0] => Decoder0.IN3
+entrada_i[1] => Decoder0.IN2
+entrada_i[2] => Decoder0.IN1
+entrada_i[3] => Decoder0.IN0
+monitor_o[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|monociclo|Disp7segs:disp_2
+entrada_i[0] => Decoder0.IN3
+entrada_i[1] => Decoder0.IN2
+entrada_i[2] => Decoder0.IN1
+entrada_i[3] => Decoder0.IN0
+monitor_o[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|monociclo|Disp7segs:disp_3
+entrada_i[0] => Decoder0.IN3
+entrada_i[1] => Decoder0.IN2
+entrada_i[2] => Decoder0.IN1
+entrada_i[3] => Decoder0.IN0
+monitor_o[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|monociclo|Disp7segs:disp_4
+entrada_i[0] => Decoder0.IN3
+entrada_i[1] => Decoder0.IN2
+entrada_i[2] => Decoder0.IN1
+entrada_i[3] => Decoder0.IN0
+monitor_o[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|monociclo|Disp7segs:disp_5
+entrada_i[0] => Decoder0.IN3
+entrada_i[1] => Decoder0.IN2
+entrada_i[2] => Decoder0.IN1
+entrada_i[3] => Decoder0.IN0
+monitor_o[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|monociclo|Disp7segs:disp_6
+entrada_i[0] => Decoder0.IN3
+entrada_i[1] => Decoder0.IN2
+entrada_i[2] => Decoder0.IN1
+entrada_i[3] => Decoder0.IN0
+monitor_o[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|monociclo|Disp7segs:disp_7
+entrada_i[0] => Decoder0.IN3
+entrada_i[1] => Decoder0.IN2
+entrada_i[2] => Decoder0.IN1
+entrada_i[3] => Decoder0.IN0
+monitor_o[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+monitor_o[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
