@@ -1,0 +1,32 @@
+/**/
+
+
+module regfile(
+
+input				clk_i,
+input		[4:0] rs1_i,
+input		[4:0] rs2_i,
+input		[4:0] rd_i,
+input		[31:0] dotord_i,
+input we_i,
+
+output	[31:0] dators1_o,
+output 	[31:0] dators2_o
+
+);
+	//definicion del banco de registros
+	reg [31:0] registerfile[0:31];
+
+	//puerto de lectura 1
+	assign dators1_o =registerfile[rs1_i];
+	//puerto de lectura 2
+	assign dators2_o =registerfile[rs2_i];
+	
+	//puerto de escritura
+	always @(posedge clk_i)
+	begin
+		if(we_i)
+			registerfile[rd_i]<= datord_i;
+	end
+
+endmodule
