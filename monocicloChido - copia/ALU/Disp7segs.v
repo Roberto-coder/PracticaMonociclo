@@ -9,7 +9,7 @@
 						Quintana Romero Roberto
 						Urdaneta Villalobos Paul Alejandro
 
-	Descripcion:	Primera version de la ALU (1 bit)
+	Descripcion:	Decodificador de 7 segmentos para display
 */
 
 module Disp7segs	(
