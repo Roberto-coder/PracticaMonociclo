@@ -20,14 +20,14 @@ module monociclo(
 
 	wire 	[31:0]		if_pc_r;
 	wire 	[31:0]		if_pcnext_w;
-	wire 	[31:0]		if_instr_w;
-	wire	[31:0]		rf_datars1_w;
-	wire	[31:0]		rf_datars2_w;
-	wire 					id_regwrite_w;
+	wire 	[31:0]		rf_inst_w;
+	wire	[31:0]		ex_datars1_w;
+	wire	[31:0]		ex_datars2_w;
+	//wire 					id_regwrite_w;
 	//wire	[31:0]		es_data_o;
 	//wire 	[31:0]		muxalu_data_w;
 	//wire					id_alusrc_w;
-	//wire 	[31:0]		wb_alurs_w;
+	wire 	[31:0]		wb_alurs_w;
 	
 	// Fetch Instruction
 	PC pc1(
@@ -42,7 +42,7 @@ module monociclo(
 	icache IC(
 		.clk_i(clk_i),
 		.rdaddr_i(if_pc_r[7:2]),
-		.inst_o(if_instr_w)
+		.inst_o(rf_inst_w)
 	);
 	
 	// Register File & Instruction Decoder
@@ -55,11 +55,11 @@ module monociclo(
 	// Tarea
 	regfile register(
 		.clk_i(clk_i),
-		.rs1_i(if_instr_w[19:15]),
-		.rs2_i(if_instr_w[24:20]),
-		.rd_i(if_instr_w[11:7]),
+		.rs1_i(rf_inst_w[19:15]),
+		.rs2_i(rf_inst_w[24:20]),
+		.rd_i(rf_inst_w[11:7]),
 		.we_i(1'b1),
-		.datord_i(ex_alurs_w),
+		.datord_i(wb_alurs_w),
 		.dators1_o(rf_datars1),
 		.dators2_o(rf_datars2)
 	);
@@ -81,12 +81,14 @@ module monociclo(
 	(
 		.a_i(rf_datars1),
 		.b_i(rf_datars2),
-		.c_i(if_instr_w[30]),
-		.invert_i(less_i),
-		.operacion_i(if_instr_w[6:0]),
-		.resultado_o(salida_o),
+		.c_i(rf_inst_w[30]),
+		.invert_i(rf_inst_w[30]),
+		.operacion_i({rf_inst_w[30],rf_inst_w[14:12]}),
+		.resultado_o(wb_alurs_w),
 		.c_o()
 	);
+	
+	assign salida_o = wb_alurs_w;
 	
 	//assign wb_resultado_o = ex_resultado_o;
 
