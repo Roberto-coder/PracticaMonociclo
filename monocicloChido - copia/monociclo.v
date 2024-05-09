@@ -18,24 +18,76 @@ module monociclo(
 	output	[31:0]	salida_o
 );
 
-	wire 	[31:0]		pc_r;
-	wire 	[31:0]		pcnext_w;
+	wire 	[31:0]		if_pc_r;
+	wire 	[31:0]		if_pcnext_w;
+	wire 	[31:0]		if_instr_w;
+	wire	[31:0]		rf_datars1_w;
+	wire	[31:0]		rf_datars2_w;
+	wire 					id_regwrite_w;
+	//wire	[31:0]		es_data_o;
+	//wire 	[31:0]		muxalu_data_w;
+	//wire					id_alusrc_w;
+	//wire 	[31:0]		wb_alurs_w;
 	
+	// Fetch Instruction
 	PC pc1(
 		.clk_i(clk_i),
 		.rst_ni(rst_ni),
-		.pcnext_i(pcnext_w),
-		.pc_o(pc_r)
+		.pcnext_i(if_pcnext_w),
+		.pc_o(if_pc_r)
 	);
 	
-	assign pcnext_w = pc_r + 32'h4;
+	assign if_pcnext_w = if_pc_r + 32'h4;
 	
 	icache IC(
 		.clk_i(clk_i),
-		.rdaddr_i(pc_r[7:2]),
-		.inst_o(salida_o)
+		.rdaddr_i(if_pc_r[7:2]),
+		.inst_o(if_instr_w)
+	);
+	
+	// Register File & Instruction Decoder
+	/*decoder deco(
+		.opcode_i(if_inst_w[6:0]),
+		.regwrite_o(id_regwrite_w),
+		.alusrc_o(id_alusrc_w)
+	);
+	*/
+	// Tarea
+	regfile register(
+		.clk_i(clk_i),
+		.rs1_i(if_instr_w[19:15]),
+		.rs2_i(if_instr_w[24:20]),
+		.rd_i(if_instr_w[11:7]),
+		.we_i(1'b1),
+		.datord_i(ex_alurs_w),
+		.dators1_o(rf_datars1),
+		.dators2_o(rf_datars2)
 	);
 	
 	
+	/*signextend sigex(
+		.inst_i(if_inst_o),
+		.imm_o(se_data_o)
+	);*/
+	
+	// Execution & Write Back
+	
+	// Multiplexor segundo operando de la alu
+	//assign muxalu_data_w = id_alu_src ? se_data_o : rf_datars1_o;
+	
+	ALUNBits #(
+		.N(32)
+	)
+	(
+		.a_i(rf_datars1),
+		.b_i(rf_datars2),
+		.c_i(if_instr_w[30]),
+		.invert_i(less_i),
+		.operacion_i(if_instr_w[6:0]),
+		.resultado_o(salida_o),
+		.c_o()
+	);
+	
+	//assign wb_resultado_o = ex_resultado_o;
 
 endmodule

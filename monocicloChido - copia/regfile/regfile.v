@@ -1,19 +1,30 @@
+/*
+	Grupo:			5CV3
+	Proyecto:		Monociclo
+	Archivo:			regfile.v
+	Equipo:			Equipo 2
+	Integrantes:	Alcaraz Cuevas Victor Hugo
+						Montoya Morales Luis Antonio
+						Navarrete Becerril Sharon Anette
+						Quintana Romero Roberto
+						Urdaneta Villalobos Paul Alejandro
+
+	Descripcion:	Banco de registros
+*/
+
 module regfile(
-	input				clk_i,
-	input [0:5]		rs1_i,
-	input [0:5]		rs2_i,
-	input [0:5]		rd_i,
-	input				we_i,
-	input [31:0]	datord_i,
-	output[31:0]	dators1_o,
-	output[31:0]	dators2_o
+	input				clk_i,		//CLock
+	input [0:4]		rs1_i,		// Read register address 1
+	input [0:4]		rs2_i,		// Read register address 2
+	input [0:4]		rd_i,			// Write register address
+	input				we_i,			// Write enable
+	input [31:0]	datord_i,	// Write data
+	output[31:0]	dators1_o,	//	Read data 1
+	output[31:0]	dators2_o	//	Read data 2
 );
 
 	reg [31:0] memoria [0:31];
-	
-	initial begin
-		$readmemh("D:\ESCOM\burbuja.hex", memoria);
-	end
+
 	
 	assign dators1_o = memoria[rs1_i];
 	assign dators2_o = memoria[rs2_i];
