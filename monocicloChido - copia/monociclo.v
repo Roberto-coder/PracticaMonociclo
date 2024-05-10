@@ -29,6 +29,13 @@ module monociclo (
 	wire		[31:0]	pcnext_w;
 	wire 		[31:0]	salida_o;
 	reg		[31:0]	cuenta;
+	wire 					c_o;
+	wire 		[31:0] 	es_dato_o;
+	wire 		[31:0] 	muxalu_dato_o;
+	wire 		[31:0] 	
+	wire				idregwrite_o;
+	wire				id_alusrc_o;
+	
 	// Seccion de asingacion de señales para monitero en FPGA
 	assign	salida_o = pc_r;
 	wire		clk_w;
@@ -97,5 +104,41 @@ module monociclo (
 		.rdaddr_i,	(pc_r[7:2]),
 		.inst_o		(if_inst_o)
 	)
+	
+	//Etapa de decodificacion
+		decodificador decode_u0(
+	.opcode_i			(if_inst_o),
+	.regwrite_o			(idregwrite_o),
+	.alusrc_o			(id_alusrc_o)
+)
+	
+	//Conectar el banco de registros
+		//rf_datos2_o
+	
+	//Extensión de signo
+	extensiondesigno extend_u3 (
+		.instruccion_i			(if_inst_o),
+		.inmediato_o			(es_dato_o) //Extension de signo: es_(...)
+	);
+	
+	//Multiplexor para el segundo operando de la ALU
+	assign muxalu_dato_o = (id_alusrc_o) ? esdato_o : rfdators2_o;//FALTA OPCION
+	
+	//Conectar la alu
+	ALUNBits #(
+		.N					(32)
+	)
+	(
+		.a_i				(),
+		.b_i				(muxalu_dato_o),
+		.c_i				(if_inst_o[30]),
+		.invert_i		(if_inst_o[30]),
+		//.less_i			(),
+		.operacion_i	({if_inst_o[30],if_inst_o[14:12]}),
+		.resultado_o	(),
+		.c_o				(c_i)
+	);
+	
+	//Se toma el bit5 de func7 para el bit faltante de la operacion(bit30)
 
 endmodule 	

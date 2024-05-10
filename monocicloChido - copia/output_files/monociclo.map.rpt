@@ -1,5 +1,5 @@
-Analysis & Synthesis report for monociclo
-Thu May 02 21:23:32 2024
+Analysis & Elaboration report for monociclo
+Mon May 06 20:57:37 2024
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -7,10 +7,10 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Analysis & Elaboration Settings
+  5. Analysis & Elaboration Messages
 
 
 
@@ -34,9 +34,9 @@ refer to the applicable agreement for further details.
 
 
 +----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
+; Analysis & Elaboration Summary                                                   ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Thu May 02 21:23:32 2024           ;
+; Analysis & Elaboration Status      ; Failed - Mon May 06 20:57:37 2024           ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; monociclo                                   ;
 ; Top-level Entity Name              ; monociclo                                   ;
@@ -53,8 +53,24 @@ refer to the applicable agreement for further details.
 +------------------------------------+---------------------------------------------+
 
 
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 8           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
 +------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                              ;
+; Analysis & Elaboration Settings                                                                            ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
@@ -139,49 +155,34 @@ refer to the applicable agreement for further details.
 +------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 8           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
+Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Thu May 02 21:23:13 2024
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off monociclo -c monociclo
+    Info: Processing started: Mon May 06 20:57:17 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off monociclo -c monociclo --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
-Error (10170): Verilog HDL syntax error at regfile.v(26) near text: "end";  expecting ";". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: D:/6to/Arqui/Practicas/Monociclo/regfile/regfile.v Line: 26
-Error (10112): Ignored design unit "regfile" at regfile.v(1) due to previous errors File: D:/6to/Arqui/Practicas/Monociclo/regfile/regfile.v Line: 1
-Info (12021): Found 0 design units, including 0 entities, in source file d:/6to/arqui/practicas/monociclo/regfile/regfile.v
+Info (12021): Found 1 design units, including 1 entities, in source file /6to/arqui/practicas/monociclo/regfile/regfile.v
+    Info (12023): Found entity 1: regfile File: D:/6to/Arqui/Practicas/Monociclo/regfile/regfile.v Line: 1
 Error (10170): Verilog HDL syntax error at icache.v(13) near text: ";";  expecting an identifier. Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: D:/6to/Arqui/Practicas/Monociclo/icache/icache.v Line: 13
 Error (10112): Ignored design unit "icache" at icache.v(5) due to previous errors File: D:/6to/Arqui/Practicas/Monociclo/icache/icache.v Line: 5
-Info (12021): Found 0 design units, including 0 entities, in source file d:/6to/arqui/practicas/monociclo/icache/icache.v
+Info (12021): Found 0 design units, including 0 entities, in source file /6to/arqui/practicas/monociclo/icache/icache.v
 Info (12021): Found 1 design units, including 1 entities, in source file alu/disp7segs.v
-    Info (12023): Found entity 1: Disp7segs File: E:/monocicloChido - copia/ALU/Disp7segs.v Line: 15
-Error (10267): Verilog HDL Module Instantiation error at monociclo.v(99): cannot connect instance ports both by order and by name File: E:/monocicloChido - copia/monociclo.v Line: 99
-Error (10170): Verilog HDL syntax error at monociclo.v(101) near text: "endmodule";  expecting ";". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: E:/monocicloChido - copia/monociclo.v Line: 101
+    Info (12023): Found entity 1: Disp7segs File: D:/6to/Arqui/Practicas/PracticaMonociclo/ALU-32vR/monocicloChido - copia/ALU/Disp7segs.v Line: 15
+Error (10267): Verilog HDL Module Instantiation error at monociclo.v(99): cannot connect instance ports both by order and by name File: D:/6to/Arqui/Practicas/PracticaMonociclo/ALU-32vR/monocicloChido - copia/monociclo.v Line: 99
+Error (10170): Verilog HDL syntax error at monociclo.v(107) near text: "endmodule";  expecting ";". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: D:/6to/Arqui/Practicas/PracticaMonociclo/ALU-32vR/monocicloChido - copia/monociclo.v Line: 107
 Info (12021): Found 0 design units, including 0 entities, in source file monociclo.v
 Info (12021): Found 1 design units, including 1 entities, in source file divfreq.v
-    Info (12023): Found entity 1: divfreq File: E:/monocicloChido - copia/divfreq.v Line: 1
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 6 errors, 1 warning
-    Error: Peak virtual memory: 4708 megabytes
-    Error: Processing ended: Thu May 02 21:23:32 2024
-    Error: Elapsed time: 00:00:19
-    Error: Total CPU time (on all processors): 00:00:19
+    Info (12023): Found entity 1: divfreq File: D:/6to/Arqui/Practicas/PracticaMonociclo/ALU-32vR/monocicloChido - copia/divfreq.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file bancoregistros.v
+    Info (12023): Found entity 1: BancoRegistros File: D:/6to/Arqui/Practicas/PracticaMonociclo/ALU-32vR/monocicloChido - copia/BancoRegistros.v Line: 2
+Error: Quartus Prime Analysis & Elaboration was unsuccessful. 4 errors, 1 warning
+    Error: Peak virtual memory: 4709 megabytes
+    Error: Processing ended: Mon May 06 20:57:37 2024
+    Error: Elapsed time: 00:00:20
+    Error: Total CPU time (on all processors): 00:00:21
 
 
