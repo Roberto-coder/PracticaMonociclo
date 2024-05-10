@@ -23,10 +23,10 @@ module monociclo(
 	wire 	[31:0]		rf_inst_w;
 	wire	[31:0]		ex_datars1_w;
 	wire	[31:0]		ex_datars2_w;
-	//wire 					id_regwrite_w;
-	//wire	[31:0]		es_data_o;
-	//wire 	[31:0]		muxalu_data_w;
-	//wire					id_alusrc_w;
+	wire 					id_regwrite_w;
+	wire	[31:0]		es_data_w;
+	wire 	[31:0]		muxalu_data_w;
+	wire					id_alusrc_w;
 	wire 	[31:0]		wb_alurs_w;
 	
 	// Fetch Instruction
@@ -46,41 +46,41 @@ module monociclo(
 	);
 	
 	// Register File & Instruction Decoder
-	/*decoder deco(
-		.opcode_i(if_inst_w[6:0]),
+	decoder deco(
+		.opcode_i(rf_inst_w[6:0]),
 		.regwrite_o(id_regwrite_w),
 		.alusrc_o(id_alusrc_w)
 	);
-	*/
+	
 	// Tarea
 	regfile register(
 		.clk_i(clk_i),
 		.rs1_i(rf_inst_w[19:15]),
 		.rs2_i(rf_inst_w[24:20]),
 		.rd_i(rf_inst_w[11:7]),
-		.we_i(1'b1),
+		.we_i(id_regwrite_w),
 		.datord_i(wb_alurs_w),
-		.dators1_o(rf_datars1),
-		.dators2_o(rf_datars2)
+		.dators1_o(ex_datars1_w),
+		.dators2_o(ex_datars2_w)
 	);
 	
 	
-	/*signextend sigex(
-		.inst_i(if_inst_o),
-		.imm_o(se_data_o)
-	);*/
+	signextend sigex(
+		.inst_i(rf_inst_w),
+		.imm_o(es_data_w)
+	);
 	
 	// Execution & Write Back
 	
 	// Multiplexor segundo operando de la alu
-	//assign muxalu_data_w = id_alu_src ? se_data_o : rf_datars1_o;
+	assign muxalu_data_w = id_alusrc_w ? es_data_w : ex_datars2_w;
 	
 	ALUNBits #(
 		.N(32)
 	)
 	(
-		.a_i(rf_datars1),
-		.b_i(rf_datars2),
+		.a_i(ex_datars1_w),
+		.b_i(muxalu_data_w),
 		.c_i(rf_inst_w[30]),
 		.invert_i(rf_inst_w[30]),
 		.operacion_i({rf_inst_w[30],rf_inst_w[14:12]}),
