@@ -23,12 +23,16 @@ module monociclo(
 	wire 	[31:0]		rf_inst_w;
 	wire	[31:0]		ex_datars1_w;
 	wire	[31:0]		ex_datars2_w;
-	wire 					id_regwrite_w;
+	wire 				id_regwrite_w;
 	wire	[31:0]		es_data_w;
 	wire 	[31:0]		muxalu_data_w;
-	wire					id_alusrc_w;
-	wire 	[31:0]		wb_alurs_w;
-	
+	wire				id_alusrc_w;
+	wire 	[31:0]		ex_alurs_w;
+	wire 	[31:0]		mem_rddata_w;
+	wire	[31:0]		wb_data_w;
+	wire				id_memtoreg_w;
+	wire				id_memwrite_w;
+	wire				id_memread_w;
 	// Fetch Instruction
 	PC pc1(
 		.clk_i(clk_i),
@@ -49,7 +53,10 @@ module monociclo(
 	decoder deco(
 		.opcode_i(rf_inst_w[6:0]),
 		.regwrite_o(id_regwrite_w),
-		.alusrc_o(id_alusrc_w)
+		.alusrc_o(id_alusrc_w),
+		.memtoreg_o(id_memtoreg_w),
+		.memwrite_o(id_memwrite_w),
+		.memread_o(id_memread_w)
 	);
 	
 	// Tarea
@@ -59,7 +66,7 @@ module monociclo(
 		.rs2_i(rf_inst_w[24:20]),
 		.rd_i(rf_inst_w[11:7]),
 		.we_i(id_regwrite_w),
-		.datord_i(wb_alurs_w),
+		.datord_i(wb_data_w),
 		.dators1_o(ex_datars1_w),
 		.dators2_o(ex_datars2_w)
 	);
@@ -84,12 +91,21 @@ module monociclo(
 		.c_i(rf_inst_w[30]),
 		.invert_i(rf_inst_w[30]),
 		.operacion_i({rf_inst_w[30],rf_inst_w[14:12]}),
-		.resultado_o(wb_alurs_w),
+		.resultado_o(ex_alurs_w),
 		.c_o()
 	);
+
+	// Memory
+	memory mem(
+		.clk_i(clk_i),
+		.address_i(ex_alurs_w),
+		.wdata_i(ex_datars2_w),
+		.memwrite_i(id_memwrite_w),
+		.memread_i(id_memread_w),
+		.rdata_o(mem_rddata_w)
+	);
 	
-	assign salida_o = wb_alurs_w;
-	
-	//assign wb_resultado_o = ex_resultado_o;
+	assign wb_data_w = id_memtoreg_w ? mem_rddata_w : ex_alurs_w;
+	assign salida_o = wb_data_w;
 
 endmodule
