@@ -11,22 +11,24 @@
 
 	Descripcion:	Meoria de datos
 */
-module memory(
-    input                   clk_i,
-    input [31:0]            address_i,
-    input [31:0]            wdata_i,
-    input                   memwrite_i,
-    input                   memread_i,
-    output reg [31:0]       rdata_o
+module memory #(
+    depth = 64
+    address_length = 6
+)(
+    input                                   clk_i,
+    input [address_length-1:0]              address_i,
+    input [31:0]                            wdata_i,
+    input                                   memwrite_i,
+    input                                   memread_i,
+    output reg [31:0]                       rdata_o
 );
 
-    reg [52_413:0] memoria [31:0];
+    reg [depth-1:0] memoria [31:0];
 
     always @(posedge clk_i) begin
         if(memwrite_i)
             memoria[address_i] <= wdata_i;
-        else if(memread_i)
-            rdata_o <= memoria[address_i];
     end
+    rdata_o <= (memread_i) ? memoria[address_i] : 32'b0;;
 
 endmodule

@@ -13,6 +13,10 @@ module signextend #(
 		case(opcode_w)
 				7'b0010011: // Tipo I
 					imm_o <= {{IMM{inst_i[31]}}, inst_i[31:20]};
+				7'b0100011: // Tipo S
+					imm_o <= {{IMM{inst_i[31]}}, inst_i[31:25], inst_i[11:7]};
+				7'b0000111: // Tipo L
+					imm_o <= {{IMM{inst_i[31]}}, inst_i[31:20]};
 				default:
 					imm_o <= 32'b0;
 		endcase
