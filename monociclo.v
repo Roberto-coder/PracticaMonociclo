@@ -4,10 +4,10 @@
 	Archivo:			monociclo.v
 	Equipo:			Equipo 2
 	Integrantes:	Alcaraz Cuevas Victor Hugo
-						Montoya Morales Luis Antonio
-						Navarrete Becerril Sharon Anette
-						Quintana Romero Roberto
-						Urdaneta Villalobos Paul Alejandro
+					Montoya Morales Luis Antonio
+					Navarrete Becerril Sharon Anette
+					Quintana Romero Roberto
+					Urdaneta Villalobos Paul Alejandro
 
 	Descripcion:	Encapsulamiento para la obtención de la instrucción
 */
@@ -33,6 +33,7 @@ module monociclo(
 	wire				id_memtoreg_w;
 	wire				id_memwrite_w;
 	wire				id_memread_w;
+	
 	// Fetch Instruction
 	PC pc1(
 		.clk_i(clk_i),

@@ -13,7 +13,6 @@
 */
 
 module icache(
-	input			clk_i,
 	input 	[5:0]	rdaddr_i,
 	output	[31:0]	inst_o
 );

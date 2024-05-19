@@ -1,13 +1,13 @@
 /*
 	Grupo:			5CV3
 	Proyecto:		ALU
-	Archivo:			ALU.v
+	Archivo:		ALU.v
 	Equipo:			Equipo 2
 	Integrantes:	Alcaraz Cuevas Victor Hugo
-						Montoya Morales Luis Antonio
-						Navarrete Becerril Sharon Anette
-						Quintana Romero Roberto
-						Urdaneta Villalobos Paul Alejandro
+					Montoya Morales Luis Antonio
+					Navarrete Becerril Sharon Anette
+					Quintana Romero Roberto
+					Urdaneta Villalobos Paul Alejandro
 
 	Descripcion:	Primera version de la ALU (1 bit)
 */

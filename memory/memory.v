@@ -12,7 +12,7 @@
 	Descripcion:	Meoria de datos
 */
 module memory #(
-    depth = 64
+    depth = 64,
     address_length = 6
 )(
     input                                   clk_i,
@@ -20,7 +20,7 @@ module memory #(
     input [31:0]                            wdata_i,
     input                                   memwrite_i,
     input                                   memread_i,
-    output reg [31:0]                       rdata_o
+    output [31:0]                       rdata_o
 );
 
     reg [depth-1:0] memoria [31:0];
@@ -29,6 +29,6 @@ module memory #(
         if(memwrite_i)
             memoria[address_i] <= wdata_i;
     end
-    rdata_o <= (memread_i) ? memoria[address_i] : 32'b0;;
+    assign rdata_o = (memread_i) ? memoria[address_i] : 32'b0;
 
 endmodule
