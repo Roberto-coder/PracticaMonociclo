@@ -18,8 +18,10 @@ module monociclo(
 	output	[31:0]	salida_o
 );
 
+	// Fetch Instruction
 	wire 	[31:0]		if_pc_r;
 	wire 	[31:0]		if_pcnext_w;
+	// Register File & Instruction Decoder
 	wire 	[31:0]		rf_inst_w;
 	wire	[31:0]		ex_datars1_w;
 	wire	[31:0]		ex_datars2_w;
@@ -33,7 +35,8 @@ module monociclo(
 	wire				id_memtoreg_w;
 	wire				id_memwrite_w;
 	wire				id_memread_w;
-	
+	wire	[3:0]		aluop_w;
+
 	// Fetch Instruction
 	PC pc1(
 		.clk_i(clk_i),
@@ -45,7 +48,6 @@ module monociclo(
 	assign if_pcnext_w = if_pc_r + 32'h4;
 	
 	icache IC(
-		.clk_i(clk_i),
 		.rdaddr_i(if_pc_r[7:2]),
 		.inst_o(rf_inst_w)
 	);
@@ -72,17 +74,23 @@ module monociclo(
 		.dators2_o(ex_datars2_w)
 	);
 	
+	ALUControl aluctr(
+		.opcode_i(rf_inst_w[6:0]),
+		.fun3_i(rf_inst_w[14:12]),
+		.fun7_i(rf_inst_w[30]),
+		.aluop_o(aluop_w)
+	);
 	
 	signextend sigex(
 		.inst_i(rf_inst_w),
 		.imm_o(es_data_w)
 	);
 	
-	// Execution & Write Back
 	
 	// Multiplexor segundo operando de la alu
 	assign muxalu_data_w = id_alusrc_w ? es_data_w : ex_datars2_w;
 	
+	// Execution & Write Back
 	ALUNBits #(
 		.N(32)
 	)
@@ -91,7 +99,7 @@ module monociclo(
 		.b_i(muxalu_data_w),
 		.c_i(rf_inst_w[30]),
 		.invert_i(rf_inst_w[30]),
-		.operacion_i({rf_inst_w[30],rf_inst_w[14:12]}),
+		.operacion_i(aluop_w),
 		.resultado_o(ex_alurs_w),
 		.c_o()
 	);

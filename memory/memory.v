@@ -20,7 +20,7 @@ module memory #(
     input [31:0]                            wdata_i,
     input                                   memwrite_i,
     input                                   memread_i,
-    output [31:0]                       rdata_o
+    output [31:0]                           rdata_o
 );
 
     reg [depth-1:0] memoria [31:0];
