@@ -25,13 +25,17 @@ module ALUNBits #(
 	input 		less_i,
 	input 		[3:0] operacion_i,
 	output reg	 	[N-1:0] resultado_o,
-	output 		c_o
+	output 		c_o,
+	output	zeroflag_o
 );
 
 	wire   [N:0]   carries_w;
 	wire	 set_o;
 	assign carries_w[0] = c_i;
 	wire	 [N-1:0] restmp_w;
+	
+	//Generacion de la bandera de cero 0
+	assign zeroflag = ~|(salida_o);
 
 	//Variable para bucle
 	genvar i;

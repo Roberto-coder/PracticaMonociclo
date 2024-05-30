@@ -32,12 +32,18 @@ module monociclo (
 	wire 					c_o;
 	wire 		[31:0] 	es_dato_o;
 	wire 		[31:0] 	muxalu_dato_o;
-	wire 		[31:0] 	
-	wire				idregwrite_o;
-	wire				id_alusrc_o;
+	wire					idregwrite_o;
+	wire					id_alusrc_o;
+	wire		[31:0]	ssl1bit_o;
+	wire		[31:0]	branch_pc_w;
+	wire 		[31:0]	id_branch_o;
+	wire 		[31:0]	ssldato_o;
+	wire 					ex_zeroflag_o;
+	wire					pcsrc_w;
+	wire		[31:0]	pcbranchnext_W;
 	
 	// Seccion de asingacion de señales para monitero en FPGA
-	assign	salida_o = pc_r;
+	assign	salida_o = wb_resultado_o;
 	wire		clk_w;
 	
 	divfreq DivFreq(
@@ -55,7 +61,7 @@ module monociclo (
 			pc_r <= pcnext_w;
 	end
 	
-	assign	pcnext_w = pc_r + 32'h4;
+	assign	pcnext_w = pcbranch_W;
 	
 
 	
@@ -106,20 +112,37 @@ module monociclo (
 	)
 	
 	//Etapa de decodificacion
-		decodificador decode_u0(
-	.opcode_i			(if_inst_o),
-	.regwrite_o			(idregwrite_o),
-	.alusrc_o			(id_alusrc_o)
-)
+	decodificador decode_u0(
+		.opcode_i			(if_inst_o),
+		.regwrite_o			(idregwrite_o),
+		.alusrc_o			(id_alusrc_o),
+		.branch_0			(id_branch_o)
+	)
 	
 	//Conectar el banco de registros
 		//rf_datos2_o
+	BancoRegistros(
+	.clk_i		(),
+	.rd_i			(),
+	.datard_i	(),
+	.wren_i		(),
+	.rs_i			(),
+	.datars1_o	(rf_datos2_o),
+	.rs2_i		(),
+	.datars2_o	()
 	
 	//Extensión de signo
 	extensiondesigno extend_u3 (
 		.instruccion_i			(if_inst_o),
 		.inmediato_o			(es_dato_o) //Extension de signo: es_(...)
 	);
+	
+	sll1bit sll1Bit1(
+	.entrada_i	(es_dato_o),
+	.salida_o	(slldato_o)	
+
+
+);
 	
 	//Multiplexor para el segundo operando de la ALU
 	assign muxalu_dato_o = (id_alusrc_o) ? esdato_o : rfdators2_o;//FALTA OPCION
@@ -129,15 +152,21 @@ module monociclo (
 		.N					(32)
 	)
 	(
-		.a_i				(),
+		.a_i				(rf_datos2_o),
 		.b_i				(muxalu_dato_o),
 		.c_i				(if_inst_o[30]),
 		.invert_i		(if_inst_o[30]),
 		//.less_i			(),
 		.operacion_i	({if_inst_o[30],if_inst_o[14:12]}),
-		.resultado_o	(),
-		.c_o				(c_i)
+		.resultado_o	(ex_resultado_o),
+		.c_o				(c_o),
+		.zero_flag_o	(ex_zeroflag_o)
 	);
+	//Sumador para calcular el pc de salto
+	assign branch_pc_w = ssl_dato_o + pc_r;
+	assign pcsrc_w = id_branch_o & ex_zeroflag_o;
+	assign pcbranchnext_w =  (pcsrc_o) ? branchpc_w : pc_next;
+	
 	
 	//Se toma el bit5 de func7 para el bit faltante de la operacion(bit30)
 

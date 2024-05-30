@@ -124,3 +124,4 @@ set_global_assignment -name VERILOG_FILE BancoRegistros.v
 set_global_assignment -name VERILOG_FILE extension/extensiondesigno.v
 set_global_assignment -name VERILOG_FILE decodificacion/decodificador.v
 set_global_assignment -name VERILOG_FILE dcache.v
+set_global_assignment -name VERILOG_FILE sll1bit/sll1bit.v
