@@ -1,0 +1,71 @@
+D:/6to/Arqui/ALUNBits.v {1 {vlog -work work -stats=none D:/6to/Arqui/ALUNBits.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ALUNBits
+
+Top level modules:
+	ALUNBits
+
+} {} {}} D:/6to/Arqui/ALU.v {1 {vlog -work work -stats=none D:/6to/Arqui/ALU.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ALUbitN
+
+Top level modules:
+	ALUbitN
+
+} {} {}} D:/6to/Arqui/memoria_a.v {1 {vlog -work work -stats=none D:/6to/Arqui/memoria_a.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module memoria_a
+
+Top level modules:
+	memoria_a
+
+} {} {}} D:/6to/Arqui/ALU_freq.v {1 {vlog -work work -stats=none D:/6to/Arqui/ALU_freq.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ALU_freq
+
+Top level modules:
+	ALU_freq
+
+} {} {}} D:/6to/Arqui/RisingEdge_DFlipFlop_SyncReset.v {1 {vlog -work work -stats=none D:/6to/Arqui/RisingEdge_DFlipFlop_SyncReset.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module PrimerFlipFlop
+
+Top level modules:
+	PrimerFlipFlop
+
+} {} {}} D:/6to/Arqui/memoria_b.v {1 {vlog -work work -stats=none D:/6to/Arqui/memoria_b.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module memoria_b
+
+Top level modules:
+	memoria_b
+
+} {} {}} D:/6to/Arqui/ALUNBits_FPGA.v {1 {vlog -work work -stats=none D:/6to/Arqui/ALUNBits_FPGA.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ALUNBits_FPGA
+
+Top level modules:
+	ALUNBits_FPGA
+
+} {} {}} D:/6to/Arqui/Fulladder/Fulladder.v {1 {vlog -work work -stats=none D:/6to/Arqui/Fulladder/Fulladder.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Fulladder
+
+Top level modules:
+	Fulladder
+
+} {} {}} D:/6to/Arqui/SegundoFlipFlop.v {1 {vlog -work work -stats=none D:/6to/Arqui/SegundoFlipFlop.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module SegundoFlipFlop
+
+Top level modules:
+	SegundoFlipFlop
+
+} {} {}} D:/6to/Arqui/Disp7segs.v {1 {vlog -work work -stats=none D:/6to/Arqui/Disp7segs.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Disp7segs
+
+Top level modules:
+	Disp7segs
+
+} {} {}}
