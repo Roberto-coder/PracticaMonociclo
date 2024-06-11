@@ -15,16 +15,21 @@
 module monociclo(
 	input					clk_i,
 	input					rst_ni,
-	output	[31:0]	salida_o
+	output	[31:0]			salida_o
 );
 
 	// Fetch Instruction
-	wire 	[31:0]		if_pc_r;
-	wire 	[31:0]		if_pcnext_w;
+	wire 	[31:0]		if_pc_w;
+	wire 	[31:0]		if_pcnext_sum_w;
+	wire	[31:0]		if_pcnext_branch_w;
+	wire	[31:0]		if_pcnext_w;
+	wire 	[31:0]		if_shift_w;
+	wire				if_pcselector_w;
 	// Register File & Instruction Decoder
 	wire 	[31:0]		rf_inst_w;
 	wire	[31:0]		ex_datars1_w;
 	wire	[31:0]		ex_datars2_w;
+	wire				ex_zero_w;
 	wire 				id_regwrite_w;
 	wire	[31:0]		es_data_w;
 	wire 	[31:0]		muxalu_data_w;
@@ -35,20 +40,29 @@ module monociclo(
 	wire				id_memtoreg_w;
 	wire				id_memwrite_w;
 	wire				id_memread_w;
-	wire	[3:0]		aluop_w;
+	wire				id_branch_i;
+	wire	[4:0]		aluop_w;
 
 	// Fetch Instruction
 	PC pc1(
 		.clk_i(clk_i),
 		.rst_ni(rst_ni),
 		.pcnext_i(if_pcnext_w),
-		.pc_o(if_pc_r)
+		.pc_o(if_pc_w)
 	);
 	
-	assign if_pcnext_w = if_pc_r + 32'h4;
+	sll1bit sllmod(
+		.entrada_i(es_data_w),
+		.salida_o(if_shift_w)
+	);
+
+	assign if_pcnext_sum_w = if_pc_w + 32'h4;
+	assign if_pcnext_branch_w = if_shift_w + if_pc_w;
+	assign if_pcselector_w = id_branch_i & ex_zero_w;
+	assign if_pcnext_w = if_pcselector_w ? if_pcnext_branch_w : if_pcnext_sum_w;
 	
 	icache IC(
-		.rdaddr_i(if_pc_r[7:2]),
+		.rdaddr_i(if_pc_w[7:2]),
 		.inst_o(rf_inst_w)
 	);
 	
@@ -56,6 +70,7 @@ module monociclo(
 	decoder deco(
 		.opcode_i(rf_inst_w[6:0]),
 		.regwrite_o(id_regwrite_w),
+		.branch_o(id_branch_w),
 		.alusrc_o(id_alusrc_w),
 		.memtoreg_o(id_memtoreg_w),
 		.memwrite_o(id_memwrite_w),
@@ -97,11 +112,11 @@ module monociclo(
 	(
 		.a_i(ex_datars1_w),
 		.b_i(muxalu_data_w),
-		.c_i(rf_inst_w[30]),
-		.invert_i(rf_inst_w[30]),
-		.operacion_i(aluop_w),
+		.c_i(aluop_w[4]),
+		.invert_i(aluop_w[4]),
+		.operacion_i(aluop_w[3:0]),
 		.resultado_o(ex_alurs_w),
-		.c_o()
+		.c_o(ex_zero_w)
 	);
 
 	// Memory
@@ -115,6 +130,6 @@ module monociclo(
 	);
 	
 	assign wb_data_w = id_memtoreg_w ? mem_rddata_w : ex_alurs_w;
-	assign salida_o = wb_data_w;
+	assign salida_o = ex_alurs_w;
 
 endmodule

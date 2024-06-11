@@ -10,7 +10,6 @@
 						Urdaneta Villalobos Paul Alejandro
 
 	Descripcion:	Divisor de frecuencias a 1Hz
-*/
 module div_freq(
 	input clk_i,
 	input rst_ni,
@@ -36,3 +35,4 @@ module div_freq(
 	end
 	
 endmodule 
+*/

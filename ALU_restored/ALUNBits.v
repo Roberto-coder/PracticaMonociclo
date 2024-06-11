@@ -25,8 +25,11 @@ module ALUNBits #(
 	input 		less_i,
 	input 		[3:0] operacion_i,
 	output reg	 	[N-1:0] resultado_o,
-	output 		c_o
+	output 		c_o,
+	output zeroflag_o;
 );
+	// Generación de la bandera de zero
+	assign zeroflag_o = ~(|(resultado_o));
 
 	wire   [N:0]   carries_w;
 	wire	 set_o;
