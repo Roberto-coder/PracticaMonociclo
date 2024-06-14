@@ -14,7 +14,7 @@
 
 module decoder(
 	input 		[6:0]	opcode_i,
-	output reg	[2:0] 	ALUOp_o,
+	output reg	[2:0] 	aluop_o,
 	output reg			branch_o,
 	output reg			regwrite_o,
 	output reg			alusrc_o,		// Si es uno se toma el inmediato, si es cero se toma el dato del banco de registros
@@ -33,6 +33,7 @@ module decoder(
 				memread_o 	<= 1'b0;
 				memwrite_o 	<= 1'b0;
 				memtoreg_o 	<= 1'b0;
+				aluop_o		<= 3'b001;
 			end
 			7'b0110011: begin						// Tipo R
 			// Escribe en banco de registros y recibe dato desde el banco de registro, no utiliza memoria
@@ -42,6 +43,7 @@ module decoder(
 				memread_o 	<= 1'b0;
 				memwrite_o 	<= 1'b0;
 				memtoreg_o 	<= 1'b0;
+				aluop_o		<= 3'b000;
 			end
 			7'b0100011: begin						// Tipo S
 			// Guarda dato en memoria, no escribe en banco de registros
@@ -51,6 +53,7 @@ module decoder(
 				memread_o 	<= 1'b0;
 				memwrite_o 	<= 1'b1;
 				memtoreg_o 	<= 1'b0;
+				aluop_o		<= 3'b010;
 			end
 			7'b0000011: begin						// Tipo L
 			//Guarda dato en banco de registros, recibe dato desde memoria
@@ -60,6 +63,7 @@ module decoder(
 				memread_o 	<= 1'b1;
 				memwrite_o 	<= 1'b0;
 				memtoreg_o 	<= 1'b1;
+				aluop_o		<= 3'b011;
 			end
 			7'b1100011: begin						// Tipo B
 			// No escribe en banco de registros, no utiliza memoria
@@ -69,6 +73,7 @@ module decoder(
 				memread_o 	<= 1'b0;
 				memwrite_o 	<= 1'b0;
 				memtoreg_o 	<= 1'b0;
+				aluop_o		<= 2'b100;
 			end
 			7'b1100111: begin						// Tipo J
 				regwrite_o 	<= 1'b0;
@@ -77,6 +82,7 @@ module decoder(
 				memread_o 	<= 1'b0;
 				memwrite_o 	<= 1'b0;
 				memtoreg_o 	<= 1'b0;
+				aluop_o		<= 2'b101;
 			end
 			default: begin							// Instruccion no soportada
 				regwrite_o 	<= 1'b0;
@@ -85,6 +91,7 @@ module decoder(
 				memread_o 	<= 1'b0;
 				memwrite_o 	<= 1'b0;
 				memtoreg_o 	<= 1'b0;
+				aluop_o		<= 2'b00;
 			end
 		endcase
 	end

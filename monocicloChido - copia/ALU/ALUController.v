@@ -13,7 +13,7 @@
 */
 
 module ALUControl (
-    input       [6:0]   opcode_i,
+    input       [2:0]   opcode_i,
     input       [2:0]   fun3_i,
     input               fun7_i,
     output reg  [4:0]   aluop_o
@@ -21,13 +21,13 @@ module ALUControl (
 
     always @(*) begin
         case(opcode_i)
-            7'b0110011:         // Operaciones Tipo R
+            3'b000:         // Operaciones Tipo R
                 case (fun3_i)
                     3'b000:                // Suma - Resta
                         if(fun7_i)
-                            aluop_o = 5'b10010;
+                            aluop_o = 5'b10010; // Resta
                         else
-                            aluop_o = 5'b00010;
+                            aluop_o = 5'b00010; // Suma
                     3'b001:                // AND
                         aluop_o = 5'b00000;
                     3'b010:                // OR
@@ -48,7 +48,7 @@ module ALUControl (
                     default:               // Operacion no soportada
                         aluop_o = 5'b00000;
                 endcase
-            7'b0010011:         // Operaciones Tipo I
+            3'b001:         // Operaciones Tipo I
                 case (fun3_i)
                     3'b000:                // ADDI
                         aluop_o = 5'b00010;
@@ -69,13 +69,13 @@ module ALUControl (
                     default:               // Operacion no soportada
                         aluop_o = 5'b00000;
                 endcase
-            7'b0100011:         // Operaciones Tipo S
+            3'b010:         // Operaciones Tipo S
                 aluop_o = 5'b00001; // OR
-            7'b0000011:         // Operaciones Tipo L
+            3'b011:         // Operaciones Tipo L
                 aluop_o = 5'b00010; // ADD
-            7'b1100011:         // Operaciones Tipo B
+            3'b100:         // Operaciones Tipo B
                 aluop_o = 5'b00010; // ADD
-            7'b1101111:         // Operaciones Tipo J
+            3'b101:         // Operaciones Tipo J
                 aluop_o = 5'b00111; // OR
             default:            // Instruccion no soportada
                 aluop_o = 5'b00000;
