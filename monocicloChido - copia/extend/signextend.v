@@ -9,13 +9,28 @@ module signextend #(
 	wire [6:0] opcode_w;
 	assign opcode_w = inst_i[6:0];
 
-	always @(*) begin
-		case(opcode_w)
-				7'b0010011: // Tipo I
-					imm_o <= {{IMM{inst_i[31]}}, inst_i[31:20]};
-				default:
-					imm_o <= 32'b0;
-		endcase
+	always @(*)
+	begin
+		case (inst_i[6:0])						//OPCODE
+			//Tipo I
+			7'b0010011:
+							imm_o	=	{{IMM{inst_i[31]}},inst_i[31:20]};
+			//Tipo S
+			7'b0100011:			 		
+							imm_o	=	{{IMM{inst_i[31]}},{inst_i[31:25],inst_i[11:7]}};
+			//Tipo L
+			7'b0000011:			 		
+							imm_o	=	{{IMM{inst_i[31]}},inst_i[31:20]};
+			//Tipo B
+			7'b1100011:			 		
+							imm_o	=	{{IMM{inst_i[31]}},{inst_i[31],inst_i[7],inst_i[30:25],inst_i[11:8]}};
+			//Tipo J
+			7'b1101111:			 		
+							imm_o	=	{{12{inst_i[31]}},{inst_i[31],inst_i[19:12],inst_i[20],inst_i[30:21]}};
+			default: 
+							imm_o	=	{32{1'b0}};
+		endcase	
 	end
+
 
 endmodule 

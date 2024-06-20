@@ -150,6 +150,6 @@ module monociclo(
 	
 	// Write back
 	assign wb_wdata_w = id_memtoreg_w ? mem_rdata_w : ex_alures_w;
-	assign salida_o = ex_alures_w;
+	assign salida_o = wb_wdata_w;
 
 endmodule

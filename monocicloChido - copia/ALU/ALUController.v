@@ -70,7 +70,7 @@ module ALUControl (
                         aluop_o = 5'b00000;
                 endcase
             3'b010:         // Operaciones Tipo S
-                aluop_o = 5'b00001; // OR
+                aluop_o = 5'b00010; // ADD
             3'b011:         // Operaciones Tipo L
                 aluop_o = 5'b00010; // ADD
             3'b100:         // Operaciones Tipo B

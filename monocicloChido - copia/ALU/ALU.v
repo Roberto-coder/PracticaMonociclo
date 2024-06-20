@@ -18,7 +18,8 @@
 	input c_i,
 	input invert_i,
 	input less_i,
-	input [2:0] operacion_i,
+	input lessu_i,
+	input [3:0] operacion_i,
 	output reg resultado_o,
 	output c_o,
 	output set_o
@@ -62,11 +63,15 @@
 	always@(*)
 	begin
 		case(operacion_i)
-			3'b000: resultado_o = ab1_w; //AND
-			3'b001: resultado_o = ab2_w; //OR
-			3'b010: resultado_o = salidasum_w; //Suma-Resta
-			3'b011: resultado_o = less_i; //SLT
-			3'b100: resultado_o = ab3_w; //XOR
+			4'b0000: resultado_o = ab1_w; //AND
+			4'b0001: resultado_o = ab2_w; //OR
+			4'b0010: resultado_o = salidasum_w; //Suma-Resta
+			4'b0011: resultado_o = less_i; //SLT
+			4'b0100: resultado_o = ab3_w; //XOR
+			4'b0101: resultado_o = lessu_i; //SLTU
+			4'b0110: resultado_o = a_i; //SLR
+			4'b0111: resultado_o = a_i; //SLL
+			4'b1000: resultado_o = a_i; //SRA
 			default: resultado_o = 1'b0;
 		endcase
 

@@ -23,14 +23,18 @@ module ALUNBits #(
 	
 	input 		invert_i,
 	input 		less_i,
-	input 		[2:0] operacion_i,
-	output	 	[N-1:0] resultado_o,
-	output 		c_o
+	input 		[3:0] operacion_i,
+	output reg	 	[N-1:0] resultado_o,
+	output 		c_o,
+	output zeroflag_o
 );
+	// Generación de la bandera de zero
+	assign zeroflag_o = ~(|(resultado_o));
 
-	wire   [N:0]  carries_w;
+	wire   [N:0]   carries_w;
 	wire	 set_o;
 	assign carries_w[0] = c_i;
+	wire	 [N-1:0] restmp_w;
 
 	//Variable para bucle
 	genvar i;
@@ -48,8 +52,9 @@ module ALUNBits #(
 							.c_i				(carries_w[i]),
 							.invert_i		(invert_i),
 							.less_i			(set_o),
+							.lessu_i			(~carries_w[N]),
 							.operacion_i	(operacion_i),
-							.resultado_o	(resultado_o[i]),
+							.resultado_o	(restmp_w[i]),
 							.c_o				(carries_w[i+1])
 						);
 					
@@ -60,8 +65,9 @@ module ALUNBits #(
 							.c_i				(carries_w[i]),
 							.invert_i		(invert_i),
 							.less_i			(1'b0),
+							.lessu_i			(1'b0),
 							.operacion_i	(operacion_i),
-							.resultado_o	(resultado_o[i]),
+							.resultado_o	(restmp_w[i]),
 							.c_o				(carries_w[i+1]),
 							.set_o			(set_o)
 						);
@@ -73,14 +79,25 @@ module ALUNBits #(
 							.c_i				(carries_w[i]),
 							.invert_i		(invert_i),
 							.less_i			(1'b0),
+							.lessu_i			(1'b0),
 							.operacion_i	(operacion_i),
-							.resultado_o	(resultado_o[i]),
+							.resultado_o	(restmp_w[i]),
 							.c_o				(carries_w[i+1])
 						);
 					
 				endcase
 			end
 	endgenerate
+	
+	always@(*)
+	begin
+		case(operacion_i)
+			4'b0110: resultado_o = restmp_w >> b_i; //SLR
+			4'b0111: resultado_o = restmp_w << b_i; //SLL
+			4'b1000: resultado_o = restmp_w >>> b_i; //SRA
+			default: resultado_o = restmp_w; //Others
+		endcase
+	end
 	
 	assign c_o = carries_w[N];
 	
