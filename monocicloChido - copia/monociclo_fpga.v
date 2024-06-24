@@ -9,7 +9,7 @@
 						Quintana Romero Roberto
 						Urdaneta Villalobos Paul Alejandro
 
-	Descripcion:	Implementación para verificar el funcionamiento de la etapa de Instruction Fetch en la FPGA
+	Descripcion:	Implementación para verificar el funcionamiento de las diferentes etapas en la FPGA
 */
 
 module monociclo_fpga(

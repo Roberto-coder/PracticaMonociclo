@@ -21,7 +21,8 @@ module icache(
 	//Memoria
 	reg [31:0]	memoria	[0:63];	//Ancho y despues profundidad
 		initial begin
-		$readmemh("D:\\ESCOM\\AC\\monociclo\\burbuja.hex", memoria);
+		//$readmemh("D:\\ESCOM\\AC\\monociclo\\burbuja.hex", memoria);
+		$readmemh("D:\\6to\\Arqui\\Practicas\\PracticaMonociclo\\ALU-32vR\\burbuja.hex", memoria);
 	end
 	// Lectura de memoria
 	assign inst_o = memoria[rdaddr_i];

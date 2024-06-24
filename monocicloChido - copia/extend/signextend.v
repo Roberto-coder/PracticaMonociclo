@@ -1,3 +1,17 @@
+/*
+	Grupo:			5CV3
+	Proyecto:		Monociclo
+	Archivo:			signextend.v
+	Equipo:			Equipo 2
+	Integrantes:	Alcaraz Cuevas Victor Hugo
+						Montoya Morales Luis Antonio
+						Navarrete Becerril Sharon Anette
+						Quintana Romero Roberto
+						Urdaneta Villalobos Paul Alejandro
+
+	Descripcion:	Modulo que recopila el inmediato y le extiende el signo
+*/
+
 module signextend #(
 	parameter 	IMM = 20
 )

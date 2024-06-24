@@ -1,3 +1,17 @@
+/*
+	Grupo:			5CV3
+	Proyecto:		Monociclo
+	Archivo:			Fulladder.v
+	Equipo:			Equipo 2
+	Integrantes:	Alcaraz Cuevas Victor Hugo
+						Montoya Morales Luis Antonio
+						Navarrete Becerril Sharon Anette
+						Quintana Romero Roberto
+						Urdaneta Villalobos Paul Alejandro
+
+	Descripcion:	Sumador completo de 1 bit
+*/
+
 module Fulladder(
 	input	a_i,
 	input b_i,
